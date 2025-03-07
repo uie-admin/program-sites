@@ -4,6 +4,7 @@ section {
 
 .section-split {
     display: flex;
+    gap: 20px;
 }
 
 .inner-column {
@@ -113,7 +114,7 @@ hr {
         flex-direction: column;
     }
 
-    .links-list + .links-list {
+    .links-list+.links-list {
         margin-top: 1.75em;
     }
 }
