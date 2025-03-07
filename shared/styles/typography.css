@@ -32,18 +32,23 @@ h4 {
     margin-top: 1em;
 }
 
-h2+p,
-h3+p,
-h3+button {
+h2 + p,
+h3 + p,
+h3 + button {
     margin-top: 1em;
 }
 
-p+p {
+p + p {
     margin-top: 1em;
 }
 
 .strong {
     font-weight: 700;
+}
+
+em {
+    font-style: italics;
+    margin-top: 1em;
 }
 
 .semi-strong {

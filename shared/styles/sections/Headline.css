@@ -1,5 +1,5 @@
 .headline {
-    background-color: #662547;
+    background-color: var(--accent-1);
     display: flex;
     /* align-items: center; */
 }

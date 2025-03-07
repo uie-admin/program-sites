@@ -7,9 +7,7 @@ import SpiffyCheckout from "../../../shared/components/Integrations/SpiffyChecko
 import Section from "../../../shared/components/Layout/Section";
 import { CohortContext } from "../App";
 
-export default function Cohort({
-    cohortIndex,
-}) {
+export default function Cohort({ cohortIndex }) {
     const [loadingTime, setLoadingTime] = useState(true);
     const [loadingText, setLoadingText] = useState("Loading Checkout...");
     const checkoutRef = useRef(null);
@@ -22,7 +20,6 @@ export default function Cohort({
         const month = startDate.toLocaleString("default", { month: "long" });
         setMonth(month);
     }
-
 
     useEffect(() => {
         const observer = new MutationObserver(() => {
@@ -100,7 +97,7 @@ export default function Cohort({
                     />
                     <button className="btn btn-shadow schedule-button inner-column-purchase button cohortSelector-button-link">
                         <Link
-                            to={'/Cohort' + cohortIndex + '-schedule'}
+                            to={"/Cohort" + cohortIndex + "-schedule"}
                             className="cohortSelector-button-link"
                         >
                             {month} Schedule
@@ -165,8 +162,14 @@ export default function Cohort({
             <div ref={checkoutRef}>
                 <SpiffyCheckout>
                     <h2>Join the {month} UX Research Cohort</h2>
-                    {loadingTime && <a onClick={handleRefresh}>{loadingText}</a>}
-                    <spiffy-checkout url={cohorts ? cohorts[cohortIndex - 1][0]?.embedURL : ''}></spiffy-checkout>
+                    {loadingTime && (
+                        <a onClick={handleRefresh}>{loadingText}</a>
+                    )}
+                    <spiffy-checkout
+                        url={
+                            cohorts ? cohorts[cohortIndex - 1][0]?.embedURL : ""
+                        }
+                    ></spiffy-checkout>
                 </SpiffyCheckout>
             </div>
         </div>

@@ -23,12 +23,12 @@ export default function Home() {
                 title={
                     <>
                         <p>
-                            Strategic UX Research is changing organizations. Get
-                            ready to change yours, too.
+                            To get real measurable UX results, we need to focus
+                            on our customers’ and users’ real needs.
                         </p>
                         <p>
-                            Lead your organization to become the foremost expert
-                            in your users and customers.
+                            Everything we do and measure should be
+                            outcome-based. No more measuring for measuring sake.
                         </p>
                     </>
                 }
@@ -42,128 +42,127 @@ export default function Home() {
 
             <Section name="HomeContent" split>
                 <div>
-                    <h2>Strategic UX Research is the Next Big Thing.</h2>
+                    <h2>Outcome-Driven UX Metrics.</h2>
+                    <h2>Measuring your users’ actual experience.</h2>
                     <p>
-                        Get ready to connect your organization’s long-term
-                        direction and strategy directly to your customers’ and
-                        users’ deepest needs.
+                        <strong>Outcome-Driven UX Metrics</strong> is our
+                        radical approach to measuring and reporting UX metrics
+                        with your organization. You’ll directly measure how
+                        every new release of your products and services improves
+                        your customers’ and users’ lives.
                     </p>
-                    <p>
-                        Awaken your top executives to the value that great user
-                        experiences bring to your organization and the people
-                        you serve.
-                    </p>
-                    <p>
-                        Give your senior stakeholders and executives a detailed,
-                        shared understanding of your customers’ and users’
-                        experiences. They’ll use your Strategic UX Research to
-                        set the business’ direction, determine where to invest,
-                        and focus the entire organization’s long-term and
-                        short-term objectives on prioritizing improved
-                        experiences.
-                    </p>
-                    <p>
-                        Your new Strategic UX Research efforts will change the
-                        relationships your senior executives and stakeholders
-                        will have with everyone who will benefit from your
-                        products and services. It’s a profound transformation
-                        that restructures how your organization makes essential
-                        decisions.
-                    </p>
-
-                    <h3>
-                        How Strategic UX Research is different from what’s
-                        practiced today.
-                    </h3>
-                    <p>
-                        Most teams today practice Tactical UX Research. Their
-                        work rarely affects more than a specific feature or
-                        product.
-                    </p>
-                    <p>
-                        Their research results only describe immediate
-                        recommendations or changes that will improve the product
-                        slightly.
-                    </p>
-                    <p>
-                        Tactical UX Research rarely improves our understanding
-                        of users or what they need in the long term. This
-                        understanding never reaches the organization’s upper
-                        levels. The most critical decisions, like budgets,
-                        staffing, and priorities, don’t consider the users’
-                        experiences. Yet these decisions affect whether the team
-                        will have what it needs to deliver a great user
-                        experience.
-                    </p>
-                    <p>
-                        Conversely, Strategic UX Research is about attaining a
-                        deeper understanding of all the different users and
-                        their individual experiences. Everyone, including the
-                        executive team, learns more about what makes an
-                        excellent experience for users, employees, and customers
-                        and how to improve their current experiences.
-                    </p>
-                    <p>
-                        These experiences go beyond using the organization’s
-                        products or services. They include what happens before,
-                        during, and after someone has interacted with the
-                        product. Strategic UX Research uncovers the entirety of
-                        people's experiences.
-                    </p>
-                    <p>
-                        Research teams orchestrate deep-hanging-out sessions
-                        with customers and users. They collect observations and
-                        insights that show what a day in the life of users could
-                        be like. They combine different experiences with the
-                        product or service across the user’s lifetime and
-                        connect this all together to show a detailed journey.
-                    </p>
-
-                    <h3>
-                        Discover the basic principles of Strategic UX Research:
-                    </h3>
-                    <ul>
+                    <p>When you share Outcome-driven UX Metrics, you’ll…</p>
+                    <ul className="styled-list">
                         <li>
-                            Build deep expertise about users and their needs.
+                            Increase the strategic contributions your UX team
+                            delivers to your organization.
                         </li>
                         <li>
-                            Focus the organization on improving the daily lives
-                            of customers, users, and employees.
+                            Raise the perception of UX’s value in the eyes of
+                            your executives and senior stakeholders.
                         </li>
                         <li>
-                            Combine UX and CX practices to collect knowledge
-                            from every touch point.
+                            Inspire your peers in development and product
+                            management to make UX a priority in their work.
                         </li>
                         <li>
-                            Study holistic experiences instead of small slices
-                            of a product’s features.
-                        </li>
-                        <li>
-                            Feed the research results into every outcome and
-                            decision.
+                            Guide your organization to deliver more
+                            human-centered products and services.
                         </li>
                     </ul>
                     <p>
-                        Strategic UX research transforms your organization into
-                        an industry leader who delivers, hands down, the most
-                        innovative experiences.
+                        The Outcome-driven UX Metrics framework is not based on
+                        the magical thinking you find in conventional UX metrics
+                        approaches. Conventional metrics make your work harder
+                        because there’s no direct connection to the effort you
+                        put in.
+                    </p>
+
+                    <p>
+                        With conventional metrics, you have to cross your
+                        fingers and hope that your hard work will improve your
+                        conversion rates, Net Promoter Scores, or revenue and
+                        retention metrics. Those metrics make it hard when
+                        someone asks how you know your work made things better.
+                        With conventional metrics, you never really know.
+                    </p>
+
+                    <p>
+                        Outcome-driven UX Metrics are different. They measure
+                        directly how you and your team have improved your
+                        customers’ and users’ lives.
                     </p>
                     <p>
-                        Your senior executives will champion even more research
-                        because they now see how the entire organization
-                        treasures it. They'll no longer stop your UX research
-                        efforts from being undervalued and the first to be cut.
+                        <em>”What gets measured, gets done.”</em> With
+                        Outcome-driven UX Metrics, UX gets done well. Your
+                        executives and senior stakeholders immediately see the
+                        value improved UX brings your customers and the
+                        increased benefits your users receive.
                     </p>
                     <p>
-                        <strong>
-                            Shape the way your organization makes strategic
-                            decisions. Deliver better-designed products and
-                            services. Our Advanced Strategic UX Research
-                            essentials will guide you every step of the way.
-                        </strong>
+                        Outcome-driven UX Metrics make UX distinctively visible.
                     </p>
-                    {/* <CourseScheduleTest /> */}
+
+                    <h3>Showcase precisely where you’re delivering value.</h3>
+
+                    <p>
+                        You’ll start with what we call a <em>UX Outcome.</em>{" "}
+                        Your UX outcome answers a simple question:
+                        <em className="emphasis">
+                            “How will you improve your users’ and customers’
+                            lives?”
+                        </em>
+                    </p>
+                    <p>
+                        Ultimately, you’ll build your metrics around this
+                        question.
+                    </p>
+
+                    <p>
+                        Using your UX outcome, you’ll create three categories of
+                        metrics:
+                    </p>
+                    <ul className="styled-list">
+                        <li>
+                            <em>UX Success metrics:</em> Report the precise
+                            moment you’ve improved your customers’ and users'
+                            lives.
+                        </li>
+                        <li>
+                            <em>UX Progress metrics:</em> Achieve key results as
+                            your team progresses against your planned
+                            milestones.
+                        </li>
+                        <li>
+                            <em>Problem-value metrics:</em> Pinpoint and
+                            aggregate your organization’s ongoing costs of poor
+                            UX to promote UX’s return on investment. 
+                        </li>
+                    </ul>
+                    <p>
+                        Each of these metrics categories helps you tell the
+                        story of your UX journey. The story of where you’re
+                        going, where you started, and how far along you are.
+                    </p>
+                    <p>
+                        Outcome-driven UX Metrics are simple in their concepts.
+                        Once you acquire the fundamentals, you’re ready to
+                        implement your own. 
+                    </p>
+                    <p>
+                        And once you implement your own Outcome-Driven UX
+                        Metrics, you've unleashed a superpower. You'll spark
+                        exceptional outcomes with your UX metrics as a
+                        foundation.
+                    </p>
+                    <p>
+                        <b>
+                            You need Outcome-driven UX metrics to improve how
+                            your organization values UX.
+                        </b>
+                    </p>
                 </div>
+                {/* <CourseScheduleTest /> */}
                 <Placeholder>
                     <VerticalCohortSelector />
                 </Placeholder>
@@ -176,12 +175,20 @@ export default function Home() {
             >
                 <Testimonial icon="star.png" author="T.H., Design Consultant:">
                     <p>
-                        “Each day’s takeaways are built upon the next to thread
-                        the story and explain a mature way of looking at
-                        human-centric design and user experience to the product
-                        team. I connected with new friends and members, which
-                        was an unexpected bonus!”
+                        The content of this course has deeply impacted my career
+                        (and love for experience design). Your framing of UX
+                        outcomes and metrics particularly filled a previously
+                        daunting gap in my practice. I find myself constantly
+                        returning to anecdotes, positions, and points of view
+                        that I came across with Jared Spool.
                     </p>
+                    <p>
+                        You’re hands down the biggest influence on my own
+                        career.
+                    </p>
+                    <span>
+                        <strong>- UX Researcher and Designer </strong>
+                    </span>
                 </Testimonial>
             </Section>
 

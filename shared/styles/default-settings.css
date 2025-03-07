@@ -1,5 +1,5 @@
 :root {
-    /* Colors */
+    /* Default Colors */
     --hue: 0;
 
     --black: hsla(var(--hue), 0%, 4%, 1);

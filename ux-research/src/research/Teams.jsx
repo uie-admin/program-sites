@@ -10,13 +10,27 @@ import MobileOnly from "../../../shared/components/Utility/MobileOnly";
 
 function TeamsTestimonial() {
     return (
-        <Testimonial icon="star.png"
-            author="- Senior Product Leader" isVertical>
-            <p>Wow, our team's time with Jared had been a whirlwind of learning and development!</p>
-            <p>I moved into a new role, building a team to bring valuable users through software products and workflows that help them achieve their goals and desired outcomes.</p>
-            <p>Jared has helped me tremendously to articulate how we can make the life of the customer better and how to be effective collaborating with other functional leaders in a UX role.</p>
+        <Testimonial
+            icon="star.png"
+            author="- Senior Product Leader"
+            isVertical
+        >
+            <p>
+                Wow, our team's time with Jared had been a whirlwind of learning
+                and development!
+            </p>
+            <p>
+                I moved into a new role, building a team to bring valuable users
+                through software products and workflows that help them achieve
+                their goals and desired outcomes.
+            </p>
+            <p>
+                Jared has helped me tremendously to articulate how we can make
+                the life of the customer better and how to be effective
+                collaborating with other functional leaders in a UX role.
+            </p>
         </Testimonial>
-    )
+    );
 }
 
 export default function Teams() {
@@ -28,10 +42,21 @@ export default function Teams() {
                         <TeamsTestimonial />
                     </Float>
                 </DesktopOnly>
-            </Headline>
-
+            </Headline>{" "}
+            <p>
+                The content of this course has deeply impacted my career (and
+                love for experience design). Your framing of UX outcomes and
+                metrics particularly filled a previously daunting gap in my
+                practice. I find myself constantly returning to anecdotes,
+                positions, and points of view that I came across with Jared
+                Spool.
+            </p>
+            <p>You’re hands down the biggest influence on my own career.</p>
+            <span>
+                <b>- UX Researcher and Designer </b>
+            </span>
             {/* current teams component */}
-            <Section>
+            <Section split>
                 <div className="article-teams">
                     <h2>Strategic UX Research to change your organization.</h2>
                     <p>
@@ -67,11 +92,9 @@ export default function Teams() {
                     <TeamsTestimonial />
                 </Placeholder>
             </Section>
-
             <MobileOnly>
                 <TeamsTestimonial />
             </MobileOnly>
-
             <Section split>
                 <div>
                     <h3>For Less than 8 Team Members: Join a Public Course</h3>
@@ -109,9 +132,7 @@ export default function Teams() {
                     />
                 </div>
             </Section>
-
             <HorizontalCohortSelector />
-
             <Section split>
                 <div>
                     <img
@@ -148,7 +169,6 @@ export default function Teams() {
                         work best for your team members.
                     </p>
                 </div>
-
             </Section>
             <Section name="video-series" split>
                 <div className="width-test-team">
