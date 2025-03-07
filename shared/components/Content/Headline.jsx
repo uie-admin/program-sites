@@ -18,7 +18,8 @@ export default function Headline({
 
             if (!verticalCohortSelector) return;
 
-            const offsetHeight = verticalCohortSelector.offsetHeight * 0.25 || 0;
+            const offsetHeight =
+                verticalCohortSelector.offsetHeight * 0.25 || 0;
 
             if (window.innerWidth < 768 && isHomePage) {
                 setStyleObj({ paddingTop: `${offsetHeight}px` });

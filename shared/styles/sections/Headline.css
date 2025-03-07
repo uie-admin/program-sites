@@ -1,11 +1,6 @@
 .headline {
-    background-color: var(--accent-1);
     display: flex;
     /* align-items: center; */
-}
-
-.headline-text {
-    /* flex-shrink: 0; */
 }
 
 .headline-text p {
