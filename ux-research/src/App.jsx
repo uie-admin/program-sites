@@ -33,7 +33,7 @@ function App() {
     return (
         <Router>
             <CohortContext.Provider value={cohorts}>
-                <Header />
+                <Header text="Advanced Strategic UX Research" />
                 <Routes>
                     {/* Define the routes for each page */}
                     <Route path="/" element={<Home />} />
