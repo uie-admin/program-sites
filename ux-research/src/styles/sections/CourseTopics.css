@@ -1,0 +1,78 @@
+.topic-icon {
+    max-width: 250px;
+}
+
+.courseTopics-intro .inner-column {
+    display: flex;
+}
+
+.left-content-container,
+.right-content-container {
+    display: flex;
+    gap: 20px;
+}
+
+.right-content {
+    background-color: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    /* margin: 0 auto; */
+}
+
+.right-content-image {
+    width: 15em;
+    margin: 1em;
+}
+
+.right-content li {
+    max-width: 100%;
+}
+
+.outcomes-to-topics-link {
+    font-weight: 700;
+}
+
+.cta-topics {
+    padding-bottom: 0;
+    .inner-column {
+        display: flex;
+    }
+}
+
+.cta-topics-text {
+    display: flex;
+    gap: 30px;
+
+    .research-logo {
+        max-width: 15em;
+    }
+}
+
+@media (max-width: 786px) {
+    .topic-icon {
+        max-width: 150px;
+    }
+    .right-content-container {
+        flex-direction: column;
+    }
+    .left-content-container {
+        flex-direction: column-reverse;
+    }
+
+    .right-content-container {
+        width: 85%;
+    }
+
+    .article-content p,
+    li,
+    h2 {
+        max-width: 100%;
+    }
+
+    .right-content-image {
+        display: none;
+    }
+
+    .courseTopics-intro .inner-column {
+        gap: 2em;
+    }
+}

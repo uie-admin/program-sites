@@ -1,0 +1,85 @@
+body {
+    /* width: 80%;
+  border: 1px solid red;
+  margin: 0 auto; */
+    font-family: "Open Sans", sans-serif;
+}
+
+/* UNIVERSAL1.3em for p */
+* p {
+    line-height: 1.5em;
+    max-width: 70ch;
+    margin: 0;
+    color: var(--ink);
+}
+
+* span {
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3,
+h4 {
+    line-height: 1.5em;
+    margin-top: 1em;
+}
+
+h2+p,
+h3+p,
+h3+button {
+    margin-top: 1em;
+}
+
+p+p {
+    margin-top: 1em;
+}
+
+.strong {
+    font-weight: 700;
+}
+
+.semi-strong {
+    font-weight: 600;
+}
+
+.calendar-container {
+    margin: 0 auto;
+    width: 75%;
+    max-width: 60em;
+    /* font-weight: bold; */
+    margin-bottom: 3em;
+}
+
+/* .sub-container {} */
+/* for mobile maybe change the width on all elements to 90% */
+
+.max-width-90 {
+    max-width: 90%;
+}
+
+.margin-right-10 {
+    margin-right: 10em;
+}
+
+.purchase-box-button-white {
+    color: white;
+    text-decoration: none;
+}
+
+/* button styles for monthly cohort page */
+
+/*!MOBILE STYLES */
+
+@media only screen and (max-width: 768px) {
+    .calendar-container {
+        width: 85%;
+    }
+}

@@ -1,0 +1,42 @@
+.left-scroll-content {
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+
+    p {
+        max-width: 74ch;
+    }
+}
+
+.right-scroll-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    min-width: 20em;
+}
+
+@media only screen and (max-width: 900px) {
+    .HomeContent .inner-column.flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courseSchedule-content-test {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-scroll-content {
+        height: auto;
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
