@@ -75,9 +75,6 @@ footer a:active {
 
 /* Responsive Styles */
 @media only screen and (max-width: 759px) {
-    .hide-on-mobile {
-        display: none;
-    }
 
     .program-links-row,
     .copyright-row {

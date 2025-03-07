@@ -1,3 +1,18 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+svg {
+    display: block;
+    width: 100%;
+}
+
 section {
     padding-block: 3em;
 }

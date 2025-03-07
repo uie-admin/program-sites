@@ -38,13 +38,4 @@
         align-items: flex-start;
     }
 
-    .basis70 {
-        width: 100%;
-    }
-
-    .basis30 {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
 }

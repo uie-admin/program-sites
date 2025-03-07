@@ -9,7 +9,6 @@ import HorizontalCohortSelector from "../../../shared/components/CohortSelectors
 import VerticalCohortSelector from "../../../shared/components/CohortSelectors/VerticalCohortSelector";
 import CalendarV2 from "../../../shared/components/CalendarV2/CohortCalendar.jsx";
 import Headline from "../../../shared/components/Content/Headline.jsx";
-import PageSticky from "../../../shared/components/Utility/PageSticky.jsx";
 import Sticky from "../../../shared/components/Utility/Sticky.jsx";
 import Placeholder from "../../../shared/components/Utility/Placeholder.jsx";
 import DesktopOnly from "../../../shared/components/Utility/DesktopOnly.jsx";

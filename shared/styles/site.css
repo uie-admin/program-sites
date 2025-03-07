@@ -1,5 +1,4 @@
 @import "reset.css";
-@import "setup.css";
 
 /*components*/
 @import "./components/Header.css";
@@ -23,14 +22,3 @@
 @import "utility.css";
 @import "typography.css";
 @import "buttons.css";
-@import "buttons.css";
-
-.App {
-    /* text-align: center; */
-}
-
-/* BREAKPOINTS <- 
-should go by pixels instead of em units 
-you can also put media breaks in each component / stylesheet
-or we can do general ones
-*/
