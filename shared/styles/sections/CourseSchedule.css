@@ -1,0 +1,85 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 5em;
+    /* border: 1px solid red; */
+    max-width: 80em;
+}
+
+.article-teams {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    /* width: 75%; */
+    /* border: 1px solid red; */
+    max-width: 60em;
+}
+
+.article-content p,
+li,
+h2,
+h1 {
+    max-width: 74ch;
+    line-height: 1.5em;
+}
+
+.article-content p,
+ul {
+    line-height: 1.5em;
+}
+
+.article-content h2 {
+    margin: 0;
+    line-height: 1.5em;
+}
+
+/* Styles for team page */
+.article-team-list {
+    list-style: none;
+    font-weight: bold;
+    line-height: 2em;
+    margin-left: -2.5em;
+}
+
+.article-team-list-item {
+    list-style: none;
+    font-weight: bold;
+    margin-top: 1.5em;
+    display: flex;
+    /* margin-top: 1em; */
+}
+
+.article-team-list img {
+    width: 40px;
+    height: 40px;
+    margin-right: 1em;
+}
+
+.pricing-list-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 1em;
+}
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    /* Adjust the width for mobile devices */
+    .article-content p,
+    li,
+    h2 {
+        max-width: 74ch;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjust the width for mobile devices */
+    .courseSchedule p,
+    li,
+    h2 {
+        max-width: 100%;
+    }
+
+    .scheduleTitle .courseSchedule-container h1 {
+        font-size: 2em;
+    }
+}

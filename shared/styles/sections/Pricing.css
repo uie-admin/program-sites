@@ -1,0 +1,43 @@
+.pricing .inner-column {
+    display: flex;
+    gap: 20px;
+}
+
+.pricing ul {
+    list-style: none;
+    line-height: 2em;
+    font-weight: bold;
+    /* border: 1px solid red; */
+}
+
+.pricing-content h2 {
+    max-width: 100%;
+}
+
+.pricing-list-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 1em;
+}
+
+.pricing-content li {
+    /* border: 1px solid red; */
+    margin-top: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+/* @media only screen and (max-width: 768px) {
+    .pricing {
+        flex-direction: column;
+    }
+
+    .pricing-content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .pricing-content ul {
+        width: 100%;
+    }
+} */

@@ -1,0 +1,15 @@
+.spiffyCheckout-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 75%;
+    /* border: 1px solid red; */
+    max-width: 60em;
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    .spiffyCheckout-box {
+        width: 85%;
+    }
+}

@@ -1,4 +1,4 @@
-import "./styles/site.css";
+import "../../../shared/styles/site.css";
 import "./App.css";
 
 // Router and Pages

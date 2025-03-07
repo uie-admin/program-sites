@@ -1,4 +1,4 @@
-import "./styles/site.css";
+import "../../../shared/styles/site.css";
 import "./styles/s;te.css";
 import "./App.css";
 

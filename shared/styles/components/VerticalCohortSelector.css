@@ -1,0 +1,130 @@
+.page-sticky {
+    position: absolute;
+    z-index: 1000;
+}
+
+.page-sticky-container {
+    margin-left: auto;
+    position: relative;
+}
+
+.horizontalCohortSelector .inner-column.flex {
+    flex-direction: column;
+    align-items: start;
+    border-radius: 1em;
+    font-weight: 600;
+    background-color: white;
+    gap: 0;
+    padding-block: 1em;
+}
+
+.cohort-1-container {
+    display: flex;
+    gap: 3.5em;
+    width: 98%;
+    margin-block: 1em;
+    position: relative;
+    max-width: var(--section-width);
+}
+
+.horizontal-cohort-paragraphs>p {
+    margin: 0;
+}
+
+.vertical-cohort-1 {
+    display: flex;
+    align-items: center;
+    padding-block: 0.75em;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.horizontal-cohort-paragraphs {
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+.verticalCohortSelector {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    padding: 1em;
+    max-height: fit-content;
+    font-weight: 600;
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.25);
+    width: 19em;
+    /* margin: 5px; */
+    background-color: #ffffff;
+}
+
+.verticalCohortSelectorContainer {
+    position: relative;
+    margin-left: auto;
+}
+
+.cohortSelector-image {
+    width: auto;
+}
+
+.cohort-choice {
+    padding: 0.75em 0;
+}
+
+.cohort-paragraphs {
+    padding-right: 2em;
+    font-weight: 600;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+.cohortSelector-button-link {
+    color: white;
+    text-decoration: none;
+}
+
+.green-team-button {
+    width: 300px;
+    background-color: #016267;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 941px) {
+    .verticalCohortSelector {
+        height: auto;
+        background-color: white;
+    }
+
+    .pricing-content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .pricing-content ul {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .horizontalCohortSelector .inner-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cohort-1-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .horizontal-cohort-1 {
+        max-width: 17.5em;
+    }
+}
