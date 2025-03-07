@@ -1,34 +1,66 @@
-.join-cohort {
-    background-color: var(--accent-2);
-    color: var(--btn-ink);
-    height: 40px;
-    width: 110px;
-    border: 2px solid black;
-    border-radius: 6px;
-    font-weight: 700;
+:root {
+    /* Colors */
+    --hue: 0;
+
+    --black: hsla(var(--hue), 0%, 4%, 1);
+    --white: hsla(var(--hue), 0%, 100%, 1);
+    --off-white: hsla(var(--hue), 0%, 97%, 1);
+
+    --ink: hsla(0, 0%, var(--black), 0.75);
+    --paper: var(--white);
+    --btn-ink: var(--white);
+
+    --accent-1: hsla(320, 47%, 27%, 1);
+    --accent-1-overlay: hsla(320, 47%, 27%, 0.9);
+    --accent-2: #ec621d;
+
+    /* Font */
+    --font-bold: 600;
+
+    /* Layout */
+    --content-max-width: 60rem;
+    --column-padding: 0em;
+
+    /* Spacing */
+    --text-padding: 1em;
 }
 
-.horizontalCohortSelector .join-cohort {
-    background-color: var(--accent-1);
+body {
+    /* width: 80%;
+  border: 1px solid red;
+  margin: 0 auto; */
+    font-family: "Open Sans", sans-serif;
 }
 
-.video-series .btn {
-    background-color: var(--accent-1);
+/* UNIVERSAL1.3em for p */
+* p {
+    line-height: 1.5em;
+    max-width: 70ch;
 }
 
-.schedule-aside .btn {
-    background-color: var(--accent-1);
+* span {
+    line-height: 1.5em;
 }
 
-.schedule-button {
-    background-color: var(--accent-2);
-    color: var(--btn-ink);
-    height: 40px;
-    width: 100%;
-    border: 2px solid black;
-    border-radius: 6px;
-    font-weight: 700;
+h1 {
+    font-weight: 800;
 }
+
+h3,
+h4 {
+    line-height: 1.5em;
+}
+
+.calendar-container {
+    margin: 0 auto;
+    width: 75%;
+    max-width: 60em;
+    /* font-weight: bold; */
+    margin-bottom: 3em;
+}
+
+/* .sub-container {} */
+/* for mobile maybe change the width on all elements to 90% */
 
 .btn {
     color: white;
@@ -63,3 +95,18 @@
     top: 3px;
     left: -3px;
 }
+
+.max-width-90 {
+    max-width: 90%;
+}
+
+.margin-right-10 {
+    margin-right: 10em;
+}
+
+.purchase-box-button-white {
+    color: white;
+    text-decoration: none;
+}
+
+/* button styles for monthly cohort page */

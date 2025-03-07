@@ -1,6 +1,5 @@
-import "./styles/site.css";
-import "./styles/s;te.css";
-import "./App.css";
+import "../../shared/styles/site.css";
+import "./metrics-settings.css";
 
 // Router and Pages
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";

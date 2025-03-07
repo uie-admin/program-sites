@@ -1,5 +1,5 @@
-import "./styles/site.css";
-import "./App.css";
+import "../../shared/styles/site.css";
+import "./research-settings.css";
 
 // Router and Pages
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";

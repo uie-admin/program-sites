@@ -1,3 +1,42 @@
+:root {
+    /* Colors */
+    --hue: 0;
+
+    --black: hsla(var(--hue), 0%, 4%, 1);
+    --white: hsla(var(--hue), 0%, 100%, 1);
+    --off-white: hsla(var(--hue), 0%, 97%, 1);
+
+    --ink: hsla(0, 0%, var(--black), 0.75);
+    --paper: var(--white);
+    --btn-ink: var(--white);
+
+    --accent-1: hsla(320, 47%, 27%, 1);
+    --accent-1-overlay: hsla(320, 47%, 27%, 0.9);
+    --accent-2: #ec621d;
+
+    /* Font */
+    --font-bold: 600;
+
+    /* Layout */
+    --content-max-width: 60rem;
+    --column-padding: 0em;
+
+    /* Spacing */
+    --text-padding: 1em;
+}
+
+@media only screen and (max-width: 1200px) {
+    :root {
+        --column-padding: 5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --column-padding: 3rem;
+    }
+}
+
 body {
     /* width: 80%;
   border: 1px solid red;
