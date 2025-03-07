@@ -1,0 +1,46 @@
+.video-series {
+
+    margin-bottom: 3em;
+    max-width: 60em;
+}
+
+.width-test-team {
+    width: 60%;
+}
+
+.width-test-10 {
+    width: 10em;
+
+}
+
+.pl-2 {
+    padding-left: 20px;
+
+}
+
+.ml-2 {
+    margin-left: 20px;
+
+}
+
+.bg-grey {
+    background-color: #f4f4f4;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .video-series {
+        flex-direction: column;
+        width: 85%;
+        align-items: center;
+    }
+
+    /* .pricing-content ul {
+        width: 100%;
+    } */
+    .width-test-team {
+        width: 95%;
+    }
+}

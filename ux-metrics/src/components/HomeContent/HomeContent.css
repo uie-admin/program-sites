@@ -1,0 +1,43 @@
+.HomeContent-content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 2em;
+}
+
+.left-scroll-content {
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    width: 75%;
+    max-width: 60em;
+}
+
+.right-scroll-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    min-width: 20em;
+}
+
+@media only screen and (max-width: 941px) {
+    .HomeContent-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-scroll-content {
+        height: auto;
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .right-scroll-content {
+        max-width: 350px;
+        margin: 0;
+    }
+}
