@@ -12,11 +12,17 @@ Developed in React by [@Antosha9108](https://github.com/Antosha9108) | [@waxhsu]
 
 Deployed on Netlify at [ux-research.centercentre.com](https://ux-research.centercentre.com/)
 
-## TODO
+## How to use
 
--   [ ] Pricing Module
--   [x] Align Horizontal Cohort Selector
--   [ ] Custom Properties / Settings (colors, column-width, etc)
--   [ ] Removing redundant or unused styles
--   [ ] Restructuring Components
--   [x] Adding <Navigation /> and <Footer /> to <Routes>
+Start sites with:
+`npm run dev:ux-research`
+`npm run dev:ux-metrics`
+
+Build sites with
+`npm run build:ux-research`
+`npm run build:ux-metrics`
+`npm run build:all`
+
+(Don't forget to include a netlify.toml)
+
+

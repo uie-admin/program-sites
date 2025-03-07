@@ -1,4 +1,5 @@
 import "./styles/site.css";
+import "./styles/s;te.css";
 import "./App.css";
 
 // Router and Pages
