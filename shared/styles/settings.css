@@ -14,6 +14,12 @@
     --accent-1-overlay: hsla(320, 47%, 27%, 0.9);
     --accent-2: #ec621d;
 
+<<<<<<< HEAD
+=======
+    --metrics-accent-1: hsla(183, 97%, 21%, 1);
+    --metrics-accent-2: hsl(327, 84%, 33%, 1);
+
+>>>>>>> 8ea2733a2e2ec0489d4a8269428f0963c50b0465
     /* Font */
     --font-bold: 600;
 
