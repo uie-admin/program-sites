@@ -10,13 +10,27 @@ import MobileOnly from "../../../shared/components/Utility/MobileOnly";
 
 function TeamsTestimonial() {
     return (
-        <Testimonial icon="star.png"
-            author="- Senior Product Leader" isVertical>
-            <p>Wow, our team's time with Jared had been a whirlwind of learning and development!</p>
-            <p>I moved into a new role, building a team to bring valuable users through software products and workflows that help them achieve their goals and desired outcomes.</p>
-            <p>Jared has helped me tremendously to articulate how we can make the life of the customer better and how to be effective collaborating with other functional leaders in a UX role.</p>
+        <Testimonial
+            icon="star.png"
+            author="- Senior Product Leader"
+            isVertical
+        >
+            <p>
+                Wow, our team's time with Jared had been a whirlwind of learning
+                and development!
+            </p>
+            <p>
+                I moved into a new role, building a team to bring valuable users
+                through software products and workflows that help them achieve
+                their goals and desired outcomes.
+            </p>
+            <p>
+                Jared has helped me tremendously to articulate how we can make
+                the life of the customer better and how to be effective
+                collaborating with other functional leaders in a UX role.
+            </p>
         </Testimonial>
-    )
+    );
 }
 
 export default function Teams() {
@@ -33,17 +47,15 @@ export default function Teams() {
             {/* current teams component */}
             <Section split>
                 <div className="article-teams">
-                    <h2>Strategic UX Research to change your organization.</h2>
+                    <h2>UX Metrics to drive your entire organization.</h2>
                     <p>
-                        Change your senior executives’ and stakeholders’
-                        relationships with everyone who benefits from your
-                        products and services. Strategic UX Research
-                        restructures how your organization makes essential
-                        decisions.
+                        Focus your team and executives on improving your
+                        customers’ lives through visible outcomes your entire
+                        team and stakeholders can measure and see.
                     </p>
                     <p>
-                        Get much more out of implementing your Strategic UX
-                        Research by involving your larger team.
+                        Get much more out of implementing your Outcome-driven UX
+                        Metrics by involving your larger team.
                     </p>
                     <ul className="article-team-list">
                         <li className="article-team-list-item">
@@ -76,8 +88,8 @@ export default function Teams() {
                 <div>
                     <h3>For Less than 8 Team Members: Join a Public Course</h3>
                     <p>
-                        As a team, you’ll develop your UX Research strategy as a
-                        team and alongside a small group of teams facing similar
+                        As a team, you’ll develop your UX Metrics plan as a team
+                        . and alongside a small group of teams facing similar
                         challenges. Together, you’ll start drafting the
                         blueprints for what change will look like across your
                         organization. You’ll come away with your own custom
@@ -115,7 +127,7 @@ export default function Teams() {
             <Section split>
                 <div>
                     <img
-                        src="/images/private-workshop-big-icon.png"
+                        src="/images/private-teams.png"
                         alt="Jared"
                         className="left-content-image"
                     />
@@ -147,16 +159,20 @@ export default function Teams() {
                         Jared will work with you to pick dates and times that
                         work best for your team members.
                     </p>
+                    <h3>Private Workshops Range</h3>
+                    <p>
+                        $15,000 USD per course. Each course is one full day or
+                        split into two half-day sessions (additional $2k),
+                        with course sizes up to 70 people. Customized courses
+                        may increase the cost.
+                    </p>
                 </div>
-
             </Section>
             <Section name="video-series" split>
                 <div className="width-test-team">
-                    <p>
-                        If you think a tailored, private Adv. Strategic UX
-                        Research course would be critical for your entire team,
-                        contact Jared to discuss the benefits and costs.
-                    </p>
+                    If you think a tailored, private Adv. Strategic UX Research
+                    course would be critical for your entire team, contact Jared
+                    to discuss the benefits and costs.
                 </div>
                 <div className="">
                     <h3 className="no-margin">Talk to Jared Over a Call</h3>

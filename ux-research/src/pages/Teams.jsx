@@ -163,6 +163,13 @@ export default function Teams() {
                         Jared will work with you to pick dates and times that
                         work best for your team members.
                     </p>
+                    <h3>Private Workshops Range</h3>
+                    <p>
+                        $15,000 USD per course. Each course is one full day or
+                        split into two half-day sessions (additional $2k),
+                        with course sizes up to 70 people. Customized courses
+                        may increase the cost.
+                    </p>
                 </div>
             </Section>
             <Section name="video-series" split>

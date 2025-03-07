@@ -43,7 +43,12 @@
     gap: 30px;
 
     .research-logo {
-        max-width: 15em;
+        max-width: 250px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 }
 

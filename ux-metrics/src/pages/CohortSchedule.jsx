@@ -22,8 +22,8 @@ export default function CohortSchedule({ cohortIndex }) {
             <section className="inner-column">
                 <div>
                     <h2>
-                        Develop your own organization’s advanced UX Research
-                        strategy.
+                        Craft and lead a strategic UX vision in your
+                        organization.
                     </h2>
                     <p>
                         Join us to complete your journey with metrics that will{" "}

@@ -7,9 +7,7 @@ import SpiffyCheckout from "../../../shared/components/Integrations/SpiffyChecko
 import Section from "../../../shared/components/Layout/Section";
 import { CohortContext } from "../App";
 
-export default function Cohort({
-    cohortIndex,
-}) {
+export default function Cohort({ cohortIndex }) {
     const [loadingTime, setLoadingTime] = useState(true);
     const [loadingText, setLoadingText] = useState("Loading Checkout...");
     const checkoutRef = useRef(null);
@@ -22,7 +20,6 @@ export default function Cohort({
         const month = startDate.toLocaleString("default", { month: "long" });
         setMonth(month);
     }
-
 
     useEffect(() => {
         const observer = new MutationObserver(() => {
@@ -65,42 +62,32 @@ export default function Cohort({
             <Section className="inner-column" split>
                 <div className="width-500">
                     <h2>
-                        Develop your own organization’s advanced UX Research
-                        strategy.
+                        Develop your own organization’s Outcome-driven UX
+                        Metrics..
                     </h2>
                     <p>
                         <strong>
-                            Awaken your top executives to the value that great
-                            user experiences bring to your organization and the
-                            people you serve.
+                            Join us to complete your journey with metrics that
+                            will drive your organization to deliver
+                            better-designed products and services.
                         </strong>
                     </p>
                     <p>
-                        Give your senior stakeholders and executives a detailed,
-                        shared understanding of your customers’ and users’
-                        experiences. They’ll use your Strategic UX Research to
-                        set the business’ direction, determine where to invest,
-                        and focus the entire organization’s long-term and
-                        short-term objectives on prioritizing improved
-                        experiences.
-                    </p>
-                    <p>
-                        Your new Strategic UX Research efforts will change the
-                        relationships your senior executives and stakeholders
-                        will have with everyone who will benefit from your
-                        products and services. It’s a profound transformation
-                        that restructures how your organization makes essential
-                        decisions.
+                        You won’t make up imaginary, over-simplified metrics for
+                        fake companies and products in this intensive. Instead,
+                        you (and your team, if you bring them along) will roll
+                        up your sleeves and identify the critical metrics for
+                        your products and services.
                     </p>
                 </div>
                 <div className="schedule-aside">
                     <img
-                        src="./images/UxResearchLogo.png"
-                        alt="Advanced Strategic UX Research"
+                        src="./images/UxMetricsLogo.png"
+                        alt="Outcome Driven UX Metrics"
                     />
                     <button className="btn btn-shadow schedule-button inner-column-purchase button cohortSelector-button-link">
                         <Link
-                            to={'/Cohort' + cohortIndex + '-schedule'}
+                            to={"/Cohort" + cohortIndex + "-schedule"}
                             className="cohortSelector-button-link"
                         >
                             {month} Schedule
@@ -120,12 +107,11 @@ export default function Cohort({
                         <strong>
                             As a team, you’ll develop your advanced UX Research
                             strategy together.
-                        </strong>
-                        You’ll restructure how your organization makes essential
-                        decisions with advanced UX Research. You’ll come away
-                        from the course with a plan to connect your
-                        organization’s long-term direction and strategy directly
-                        to your customers’ and users’ deepest needs.
+                        </strong>{" "}
+                        You’ll start drafting the blueprints for what change
+                        will look like across your organization. You’ll come
+                        away from the intensive with your own custom approach to
+                        UX Vision that your entire team can use.
                     </p>
                     <p>
                         <strong>
@@ -134,9 +120,8 @@ export default function Cohort({
                         </strong>
                     </p>
                     <p>
-                        Each team member must purchase their registration
-                        separately. Whichever you choose, team or individual,
-                        we’ll give you our full support.
+                        Whichever you choose, team or individual, we’ll give you
+                        our full support.
                     </p>
                 </div>
                 <div>
@@ -165,8 +150,14 @@ export default function Cohort({
             <div ref={checkoutRef}>
                 <SpiffyCheckout>
                     <h2>Join the {month} UX Research Cohort</h2>
-                    {loadingTime && <a onClick={handleRefresh}>{loadingText}</a>}
-                    <spiffy-checkout url={cohorts ? cohorts[cohortIndex - 1][0]?.embedURL : ''}></spiffy-checkout>
+                    {loadingTime && (
+                        <a onClick={handleRefresh}>{loadingText}</a>
+                    )}
+                    <spiffy-checkout
+                        url={
+                            cohorts ? cohorts[cohortIndex - 1][0]?.embedURL : ""
+                        }
+                    ></spiffy-checkout>
                 </SpiffyCheckout>
             </div>
         </div>

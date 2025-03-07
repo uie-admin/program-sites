@@ -4,7 +4,7 @@
 
     --black: hsla(var(--hue), 0%, 4%, 1);
     --white: hsla(var(--hue), 0%, 100%, 1);
-    --off-white: hsla(var(--hue), 0%, 97%, 1);
+    --off-white: hsla(var(--hue), 0%, 96%, 1);
 
     --ink: hsla(0, 0%, var(--black), 0.75);
     --paper: var(--white);
@@ -33,11 +33,11 @@
     --text-padding: 1em;
 }
 
-.metrics-global .headline {
+.metrics-global #headline {
     background-color: var(--metrics-accent-1);
 }
 
-.research-global .headline {
+.research-global #headline {
     background-color: var(--research-accent-1);
 }
 
