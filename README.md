@@ -1,4 +1,4 @@
-# UX Research website for Center Centre
+# CC Websites
 
 Developed in React by [@Antosha9108](https://github.com/Antosha9108) | [@waxhsu](https://github.com/waxhsu) | [@prolixmagus](https://github.com/prolixmagus) | [@alextyang](https://github.com/alextyang)
 
