@@ -31,7 +31,7 @@ export default function Teams() {
             </Headline>
 
             {/* current teams component */}
-            <Section>
+            <Section split>
                 <div className="article-teams">
                     <h2>Strategic UX Research to change your organization.</h2>
                     <p>

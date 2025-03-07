@@ -1,4 +1,4 @@
-export default function Testimonial({ icon, children, author, isVertical }) {
+export default function Testimonial({ icon, children, author, isVertical, className }) {
     const isVerticalClassname = isVertical ? "vertical-testimonial" : "";
 
     return (
@@ -8,7 +8,7 @@ export default function Testimonial({ icon, children, author, isVertical }) {
                 alt=""
                 className={
                     "testimonials-icon testimonials-" +
-                    icon.substring(0, icon.indexOf("."))
+                    icon.substring(0, icon.indexOf(".")) + " "
                 }
             />
             {children}
