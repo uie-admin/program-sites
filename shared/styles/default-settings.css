@@ -14,6 +14,14 @@
     --accent-1-overlay: hsla(320, 47%, 27%, 0.9);
     --accent-2: #ec621d;
 
+    --research-accent-1: hsla(320, 47%, 27%, 1);
+    --research-accent-1-overlay: hsla(320, 47%, 27%, 0.9);
+    --research-accent-2: #ec621d;
+
+    --metrics-accent-1: hsla(183, 95%, 21%, 1);
+    --metrics-accent-1-overlay: hsla(183, 95%, 21%, 0.9);
+    --metrics-accent-2: hsla(327, 84%, 33%, 1);
+
     /* Font */
     --font-bold: 600;
 
@@ -25,6 +33,14 @@
     --text-padding: 1em;
 }
 
+.metrics-global .headline {
+    background-color: var(--metrics-accent-1);
+}
+
+.research-global .headline {
+    background-color: var(--research-accent-1);
+}
+
 @media only screen and (max-width: 1200px) {
     :root {
         --column-padding: 5rem;
@@ -34,5 +50,11 @@
 @media only screen and (max-width: 768px) {
     :root {
         --column-padding: 3rem;
+    }
+}
+
+@media and (max-width: 500px) {
+    :root {
+        --column-padding: ;
     }
 }

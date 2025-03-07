@@ -8,12 +8,12 @@ import PageSticky from "../Utility/PageSticky";
 import DesktopOnly from "../Utility/DesktopOnly";
 import MobileOnly from "../Utility/MobileOnly";
 
-export default function Header() {
+export default function Header({ title }) {
     return (
         <>
             <Navigation />
             <Section name="header-background" bg="pixel-texture.jpg">
-                <h1>Advanced Strategic UX Research</h1>
+                <h1>{title}</h1>
                 <p className="online-course strong">
                     An Online Course with Jared Spool
                 </p>
@@ -53,7 +53,6 @@ export default function Header() {
                             <VerticalCohortSelector />
                         </MobileOnly>
                     </PageFilter>
-
                 </div>
             </Section>
         </>

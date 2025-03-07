@@ -193,22 +193,20 @@ export default function Home() {
             </Section>
 
             <Section name="courseSchedule" split>
-                <div>
-                    <h2>Strategic UX Research: Your Online Course Schedule</h2>
-
+                <div className="courseSchedule-pretext">
+                    <h2>
+                        Outcome-Driven UX Metrics: <br />
+                        Your Online Course Schedule
+                    </h2>
+                    <h4>
+                        8 Hours live with Jared Spool in small group coaching,
+                        plus 8 hours of recorded content.
+                    </h4>
                     <p>
-                        Strategic UX Research sets the business’ direction,
-                        determines where to invest, and focuses the entire
-                        organization’s long-term and short-term objectives on
-                        prioritizing improved experiences.
-                    </p>
-                    <p>
-                        Join our online workshop to make UX a valuable part of
-                        the organization’s strategy. During each of this
-                        course’s four weeks, you’ll cover two of the eight
-                        Strategic UX Research topics. For each topic, you’ll
-                        watch a pre-recorded lecture and join Jared in a live
-                        small-group coaching session.
+                        During each of this course’s four weeks, you’ll cover
+                        two of the eight topics. For each topic, you’ll watch a
+                        lecture recording and join Jared in a live small-group
+                        coaching session.
                     </p>
                     <p>
                         The lectures are already recorded, so you can watch them
@@ -217,16 +215,25 @@ export default function Home() {
                     </p>
                     <p>
                         In each coaching session, you’ll work directly with
-                        Jared and your fellow cohort members to create a
-                        strategic UX Research plan and work through challenges
-                        that are specific to your current situation. You’ll hear
-                        how others are working through their challenges, and
-                        you’ll share what’s worked best for you.
+                        Jared and your fellow cohort members to identify your
+                        own metrics and work through challenges that are
+                        specific to your current situation. You’ll hear how
+                        others are working through their challenges, and you’ll
+                        share what’s worked best for you.
                     </p>
                     <p>
                         We keep the cohorts small, so you’ll have plenty of time
-                        to be coached on how you’ll implement your strategic UX
-                        Research.
+                        to be coached on how you’ll implement your
+                        Outcome-driven UX metrics.
+                    </p>
+                    <p>
+                        We know that schedules are tough, so we record every
+                        coaching session with Jared. If you miss a session, or
+                        you just want to review what you discussed, you’ll have
+                        access to the recordings for 6 months after the course
+                        ends. (You can also watch the recordings from other
+                        cohorts, to hear how they worked through their biggest
+                        challenges.)
                     </p>
                 </div>
                 <Sticky>
@@ -268,7 +275,6 @@ export default function Home() {
                     </p>
 
                     <p>
-                        {" "}
                         Most importantly, you’ll love how smarter you’ll feel
                         after spending a few minutes absorbing his
                         experience-informed wisdom. Don’t pass up this
@@ -341,21 +347,21 @@ export default function Home() {
                     <div>
                         <h2>
                             Can’t attend the course live? <br />
-                            Purchase the Recorded Adv. Strategic UX Research
+                            Purchase the Recorded Outcome-Driven UX Metrics
                             Video Series.
                         </h2>
                         <p>
                             We know that not everyone has the resources to join
-                            us live. That’s ok. You can purchase the Adv.
-                            Strategic UX Research video series.
+                            us live. That’s ok. You can purchase the UX Metrics
+                            to Drive Your Organization's video series.
                         </p>
                         <p>
-                            You can watch all eight sessions of the Adv.
-                            Strategic UX Research Course broken up into two
+                            You can watch all nine sessions of the
+                            Outcome-driven UX Metrics Course broken up into two
                             parts in our UX Strategy Essentials Library.
                         </p>
                         <h3>What’s included for $227:</h3>
-                        <ul>
+                        <ul className="styled-list">
                             <li>
                                 The lectures and notes from all eight topics.
                             </li>
@@ -365,15 +371,15 @@ export default function Home() {
                     </div>
                 </section>
                 <div className="purchase-box">
-                    <img src="./images/laptopResearch.png" alt="computer" />
+                    <img src="./images/Metrics-laptop.png" alt="computer" />
                     <div className="purchase-box-text">
-                        <h3>Adv. Strategic UX Research Video Series</h3>
+                        <h3>Outcome Driven UX Metrics Video Series</h3>
                         <p className="purchase-box-price">$277</p>
                     </div>
                     <button className="btn-shadow btn purchase-box-button">
                         <a
                             className="purchase-box-button-white"
-                            href="https://essentials.centercentre.com/research"
+                            href="https://essentials.centercentre.com/metrics"
                         >
                             PURCHASE VIDEO SERIES
                         </a>
