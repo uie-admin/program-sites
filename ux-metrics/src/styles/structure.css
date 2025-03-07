@@ -1,0 +1,119 @@
+section {
+    padding-block: 3em;
+}
+
+.section-split {
+    display: flex;
+}
+
+.inner-column {
+    width: 98%;
+    position: relative;
+    margin-inline: auto;
+    max-width: var(--content-max-width);
+    padding-inline: var(--column-padding);
+}
+
+.icon-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--text-padding);
+}
+
+.icon-list-item {
+    display: flex;
+    align-items: center;
+    gap: var(--text-padding);
+}
+
+.price-list {
+    font-weight: var(--font-bold);
+    list-style: none;
+}
+
+.price-list li {
+    margin-top: var(--text-padding);
+}
+
+.left-content-image {
+    width: 15em;
+    margin: 1em;
+}
+
+.inner-column-spacing {
+    padding-right: 1.5em;
+}
+
+.schedule-aside {
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 1em; */
+    padding: 0.5em;
+    max-height: 35em;
+    font-weight: 600;
+    /* box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.25); */
+    width: 350px;
+    margin-top: 2em;
+    background-color: white;
+    padding-left: 2em;
+}
+
+/* pricing section for the Home page */
+.pricing-content ul {
+    list-style: none;
+    line-height: 2em;
+    margin-left: -2.5em;
+    font-weight: bold;
+}
+
+.pricing-list-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 1em;
+}
+
+.pricing-content li {
+    /* border: 1px solid red; */
+    margin-top: 1.5em;
+    display: flex;
+}
+
+/* teams grey background */
+.schedule-paragraphs {
+    font-weight: 500;
+    /* border: 1px solid red; */
+}
+
+.float-container {
+    margin-left: auto;
+    position: relative;
+}
+
+.float {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--accent-1);
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* !!!!! */
+
+@media only screen and (max-width: 768px) {
+    .inner-column {
+        flex-direction: column;
+    }
+
+    .links-list + .links-list {
+        margin-top: 1.75em;
+    }
+}

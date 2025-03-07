@@ -6,9 +6,9 @@ body {
 }
 
 /* UNIVERSAL1.3em for p */
-p,
-li {
+* p {
     line-height: 1.5em;
+    max-width: 70ch;
 }
 
 * span {
@@ -23,19 +23,13 @@ h3,
 h4 {
     line-height: 1.5em;
 }
+
 .calendar-container {
     margin: 0 auto;
     width: 75%;
     max-width: 60em;
     /* font-weight: bold; */
     margin-bottom: 3em;
-}
-
-.container {
-    display: flex;
-    width: 75%;
-    margin: 0 auto;
-    max-width: 80em;
 }
 
 /* .sub-container {} */
@@ -88,14 +82,4 @@ h4 {
     text-decoration: none;
 }
 
-/* Teams Module Style */
-
 /* button styles for monthly cohort page */
-
-/*!MOBILE STYLES */
-
-@media only screen and (max-width: 768px) {
-    .calendar-container {
-        width: 85%;
-    }
-}

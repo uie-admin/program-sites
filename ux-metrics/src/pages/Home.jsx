@@ -1,161 +1,353 @@
 // Components
-import Header from "../components/Header/Header";
-import GreenArticle from "../components/GreenArticle/GreenArticle";
-import HomeContent from "../components/HomeContent/HomeContent";
-import Testimonials from "../components/Testimonials/Testimonials";
-import CourseSchedule from "../components/CourseSchedule/CourseSchedule";
-import JaredSpool from "../components/JaredSpool/JaredSpool";
-import VideoSeries from "../components/VideoSeries/VideoSeries";
-import Footer from "../components/Footer/Footer";
-import Modal from "../components/VerticalCohortSelector/VerticalCohortSelector";
-import TestComponent from "../components/TestComponent/TestComponent";
-import PurchaseBox from "../components/PurchaseBox/PurchaseBox";
-import HorizontalCohortSelector from "../components/HorizontalCohortSelector/HorizontalCohortSelector";
-import Navbar from "../components/Navbar/Navbar";
+import Testimonial from "../../../shared/components/Content/Testimonial.jsx";
+import Section from "../../../shared/components/Layout/Section.jsx";
+import IconList from "../../../shared/components/Content/IconList.jsx";
+import PriceList from "../../../shared/components/Content/PriceList.jsx";
+
+// Widgets
+import HorizontalCohortSelector from "../../../shared/components/CohortSelectors/HorizontalCohortSelector";
+import VerticalCohortSelector from "../../../shared/components/CohortSelectors/VerticalCohortSelector";
+import CalendarV2 from "../../../shared/components/CalendarV2/CohortCalendar.jsx";
+import Headline from "../../../shared/components/Content/Headline.jsx";
+import PageSticky from "../../../shared/components/Utility/PageSticky.jsx";
+import Sticky from "../../../shared/components/Utility/Sticky.jsx";
+import Placeholder from "../../../shared/components/Utility/Placeholder.jsx";
+import DesktopOnly from "../../../shared/components/Utility/DesktopOnly.jsx";
 
 export default function Home() {
     return (
         <div className="App">
-            <Navbar />
-            <Header />
+            <Headline
+                split
+                mobileTop="3em"
+                title={
+                    <>
+                        <p>
+                            Strategic UX Research is changing organizations. Get
+                            ready to change yours, too.
+                        </p>
+                        <p>
+                            Lead your organization to become the foremost expert
+                            in your users and customers.
+                        </p>
+                    </>
+                }
+            >
+                <DesktopOnly>
+                    <Placeholder>
+                        <VerticalCohortSelector />
+                    </Placeholder>
+                </DesktopOnly>
+            </Headline>
 
-            <GreenArticle>
-                <p>
-                    To get real measurable UX results, we need to focus on our
-                    customers’ and users’ real needs.
-                </p>
-                <p>
-                    Everything we do and measure should be outcome-based. No
-                    more measuring for measuring sake. 
-                </p>
-            </GreenArticle>
-            <TestComponent>
-                <HomeContent />
-            </TestComponent>
+            <Section name="HomeContent" split>
+                <div>
+                    <h2>Strategic UX Research is the Next Big Thing.</h2>
+                    <p>
+                        Get ready to connect your organization’s long-term
+                        direction and strategy directly to your customers’ and
+                        users’ deepest needs.
+                    </p>
+                    <p>
+                        Awaken your top executives to the value that great user
+                        experiences bring to your organization and the people
+                        you serve.
+                    </p>
+                    <p>
+                        Give your senior stakeholders and executives a detailed,
+                        shared understanding of your customers’ and users’
+                        experiences. They’ll use your Strategic UX Research to
+                        set the business’ direction, determine where to invest,
+                        and focus the entire organization’s long-term and
+                        short-term objectives on prioritizing improved
+                        experiences.
+                    </p>
+                    <p>
+                        Your new Strategic UX Research efforts will change the
+                        relationships your senior executives and stakeholders
+                        will have with everyone who will benefit from your
+                        products and services. It’s a profound transformation
+                        that restructures how your organization makes essential
+                        decisions.
+                    </p>
 
-            <Testimonials>
-                <p>
-                    The content of this course has deeply impacted my career
-                    (and love for experience design). Your framing of UX
-                    outcomes and metrics particularly filled a previously
-                    daunting gap in my practice. I find myself constantly
-                    returning to anecdotes, positions, and points of view that I
-                    came across with Jared Spool.
-                </p>
-                <p>You’re hands down the biggest influence on my own career.</p>
-                <span>
-                    <b>- UX Researcher and Designer </b>
-                </span>
-            </Testimonials>
-            <CourseSchedule />
+                    <h3>
+                        How Strategic UX Research is different from what’s
+                        practiced today.
+                    </h3>
+                    <p>
+                        Most teams today practice Tactical UX Research. Their
+                        work rarely affects more than a specific feature or
+                        product.
+                    </p>
+                    <p>
+                        Their research results only describe immediate
+                        recommendations or changes that will improve the product
+                        slightly.
+                    </p>
+                    <p>
+                        Tactical UX Research rarely improves our understanding
+                        of users or what they need in the long term. This
+                        understanding never reaches the organization’s upper
+                        levels. The most critical decisions, like budgets,
+                        staffing, and priorities, don’t consider the users’
+                        experiences. Yet these decisions affect whether the team
+                        will have what it needs to deliver a great user
+                        experience.
+                    </p>
+                    <p>
+                        Conversely, Strategic UX Research is about attaining a
+                        deeper understanding of all the different users and
+                        their individual experiences. Everyone, including the
+                        executive team, learns more about what makes an
+                        excellent experience for users, employees, and customers
+                        and how to improve their current experiences.
+                    </p>
+                    <p>
+                        These experiences go beyond using the organization’s
+                        products or services. They include what happens before,
+                        during, and after someone has interacted with the
+                        product. Strategic UX Research uncovers the entirety of
+                        people's experiences.
+                    </p>
+                    <p>
+                        Research teams orchestrate deep-hanging-out sessions
+                        with customers and users. They collect observations and
+                        insights that show what a day in the life of users could
+                        be like. They combine different experiences with the
+                        product or service across the user’s lifetime and
+                        connect this all together to show a detailed journey.
+                    </p>
+
+                    <h3>
+                        Discover the basic principles of Strategic UX Research:
+                    </h3>
+                    <ul>
+                        <li>
+                            Build deep expertise about users and their needs.
+                        </li>
+                        <li>
+                            Focus the organization on improving the daily lives
+                            of customers, users, and employees.
+                        </li>
+                        <li>
+                            Combine UX and CX practices to collect knowledge
+                            from every touch point.
+                        </li>
+                        <li>
+                            Study holistic experiences instead of small slices
+                            of a product’s features.
+                        </li>
+                        <li>
+                            Feed the research results into every outcome and
+                            decision.
+                        </li>
+                    </ul>
+                    <p>
+                        Strategic UX research transforms your organization into
+                        an industry leader who delivers, hands down, the most
+                        innovative experiences.
+                    </p>
+                    <p>
+                        Your senior executives will champion even more research
+                        because they now see how the entire organization
+                        treasures it. They'll no longer stop your UX research
+                        efforts from being undervalued and the first to be cut.
+                    </p>
+                    <p>
+                        <strong>
+                            Shape the way your organization makes strategic
+                            decisions. Deliver better-designed products and
+                            services. Our Advanced Strategic UX Research
+                            essentials will guide you every step of the way.
+                        </strong>
+                    </p>
+                    {/* <CourseScheduleTest /> */}
+                </div>
+                <Placeholder>
+                    <VerticalCohortSelector />
+                </Placeholder>
+            </Section>
+
+            <Section
+                name="testimonials-container"
+                color="--accent-1-overlay"
+                bg="pixel-texture.jpg"
+            >
+                <Testimonial icon="star.png" author="T.H., Design Consultant:">
+                    <p>
+                        “Each day’s takeaways are built upon the next to thread
+                        the story and explain a mature way of looking at
+                        human-centric design and user experience to the product
+                        team. I connected with new friends and members, which
+                        was an unexpected bonus!”
+                    </p>
+                </Testimonial>
+            </Section>
+
+            <Section name="courseSchedule" split>
+                <div>
+                    <h2>Strategic UX Research: Your Online Course Schedule</h2>
+
+                    <p>
+                        Strategic UX Research sets the business’ direction,
+                        determines where to invest, and focuses the entire
+                        organization’s long-term and short-term objectives on
+                        prioritizing improved experiences.
+                    </p>
+                    <p>
+                        Join our online workshop to make UX a valuable part of
+                        the organization’s strategy. During each of this
+                        course’s four weeks, you’ll cover two of the eight
+                        Strategic UX Research topics. For each topic, you’ll
+                        watch a pre-recorded lecture and join Jared in a live
+                        small-group coaching session.
+                    </p>
+                    <p>
+                        The lectures are already recorded, so you can watch them
+                        in advance or join an optional “Live Watch” session with
+                        your fellow cohort members.
+                    </p>
+                    <p>
+                        In each coaching session, you’ll work directly with
+                        Jared and your fellow cohort members to create a
+                        strategic UX Research plan and work through challenges
+                        that are specific to your current situation. You’ll hear
+                        how others are working through their challenges, and
+                        you’ll share what’s worked best for you.
+                    </p>
+                    <p>
+                        We keep the cohorts small, so you’ll have plenty of time
+                        to be coached on how you’ll implement your strategic UX
+                        Research.
+                    </p>
+                </div>
+                <Sticky>
+                    <div className="hide-on-mobile">
+                        <VerticalCohortSelector />
+                    </div>
+                </Sticky>
+            </Section>
+
+            <CalendarV2 cohortID="B" />
+
             <HorizontalCohortSelector />
-            <JaredSpool />
 
-            <TestComponent>
-                <div className="pricing-content">
-                    <h2>Sign up for Outcome-Driven UX Metrics Course</h2>
+            <Section name="jaredSpool" split>
+                <div>
+                    <h2>
+                        Led by Jared Spool, <br /> Maker of Awesomeness
+                    </h2>
+                    <p>
+                        Everything you learn in this Intensive comes directly
+                        from Jared’s years of working across industries,
+                        discovering the best practices for organizations to
+                        deliver well-designed products and services.
+                    </p>
+
+                    <p>
+                        His experience working with design leaders of
+                        organizations like IBM, NASA, GE, Fidelity Investments,
+                        SAP, GM, Exxon Mobil, and the Obama White House has
+                        taught him exactly what teams need to mount strategic,
+                        influential UX research initiatives.
+                    </p>
+
+                    <p>
+                        You’ll love his stories, his ability to demonstrate
+                        every point with a simple, concrete example, and his
+                        comically adorable attempts to draw out his ideas. (You
+                        can’t fault him for trying, though.)
+                    </p>
+
+                    <p>
+                        {" "}
+                        Most importantly, you’ll love how smarter you’ll feel
+                        after spending a few minutes absorbing his
+                        experience-informed wisdom. Don’t pass up this
+                        opportunity to glean everything you can from Jared.
+                    </p>
+                </div>
+                <div>
+                    <img
+                        src="/images/Jared_Spool 2.png"
+                        alt="Jared"
+                        className="jaredSpool-image"
+                    />
+                </div>
+            </Section>
+
+            <Section name="program-pricing pricing">
+                <div>
+                    <h2>Sign up for Advanced Strategic UX Research Course</h2>
                     <p>
                         Ready to dive in deep and absorb everything there is to
                         know about Outcome-driven UX Metrics?
                     </p>
-                    <ul>
-                        <li>
-                            Individual price per person <br /> $499
-                        </li>
-                        <li>
-                            Team price per person ($100 off each person)
-                            <br /> $399
-                        </li>
-                        <li>
-                            Unemployed UXer per person <br /> $199
-                        </li>
-                    </ul>
-                    <div>
-                        <p>
-                            <b>What’s included:</b>
-                        </p>
-                        <ul>
-                            <li>
-                                <img
-                                    src="./images/8.png"
-                                    alt="8"
-                                    className="pricing-list-image"
-                                />
-                                Eight 1-hour live coaching sessions with Jared
-                                Spool.
-                            </li>
-                            <li>
-                                <img
-                                    src="./images/8.png"
-                                    alt="8"
-                                    className="pricing-list-image"
-                                />
-                                Eight 50-minute recorded lectures (to watch on
-                                your own time or together during a scheduled
-                                session for each topic).
-                            </li>
-                            <li>
-                                <img
-                                    src="./images/5-2.png"
-                                    alt="book"
-                                    className="pricing-list-image"
-                                />
-                                Access a library of resources for developing
-                                your UX metrics strategy.
-                            </li>
-                            <li>
-                                <img
-                                    src="./images/7.png"
-                                    alt="person with glasses"
-                                    className="pricing-list-image"
-                                />
-                                A private community to get your questions
-                                answered by Jared and other members.
-                            </li>
-                            <li>
-                                <img
-                                    src="./images/comp.png"
-                                    alt="computer"
-                                    className="pricing-list-image"
-                                />
-                                6 Weeks of access to all session recordings,
-                                Q&As, and notes.
-                            </li>
-                            <li>
-                                <img
-                                    src="./images/10.png"
-                                    alt="certificate"
-                                    className="pricing-list-image"
-                                />
-                                A personalized Certificate of Completion for the
-                                Outcome-driven UX Metrics program.
-                            </li>
-                        </ul>
-                    </div>
+                    <PriceList
+                        prices={[
+                            {
+                                description: "Individual price per person",
+                                price: "$499",
+                            },
+                            {
+                                description:
+                                    "Team price per person ($100 off each person)",
+                                price: "$399",
+                            },
+                            {
+                                description: "Unemployed UXer per person",
+                                price: "$199",
+                            },
+                        ]}
+                    />
+
+                    <h3>What’s included in the course:</h3>
+
+                    <IconList
+                        icons={[
+                            "./images/8.png",
+                            "./images/8.png",
+                            "./images/5-2.png",
+                            "./images/7.png",
+                            "./images/comp.png",
+                            "./images/10.png",
+                        ]}
+                        iconSize="2.5rem"
+                        descriptions={[
+                            "Eight 90-minute live sessions with Jared Spool.",
+                            "Eight 60-minute recorded lectures by Jared Spool.",
+                            "Your Outcome-driven UX Metrics Planning Workbook.",
+                            "Direct access to ask Jared Spool questions.",
+                            "6 Weeks of access to all session recordings, Q&As, and notes.",
+                            "A personalized Certificate of Completion for the Outcome-driven UX Metrics program.",
+                        ]}
+                    />
                 </div>
-                <Modal />
-            </TestComponent>
-            <div className="bg-grey">
-                <VideoSeries>
+                <Sticky>
+                    <VerticalCohortSelector />
+                </Sticky>
+            </Section>
+
+            <Section name="video-series" color="bg-grey" split>
+                <section className="video-series-content">
                     <div>
-                        <h3>
+                        <h2>
                             Can’t attend the course live? <br />
-                            Purchase the Recorded Outcome-Driven UX Metrics
+                            Purchase the Recorded Adv. Strategic UX Research
                             Video Series.
-                        </h3>
+                        </h2>
                         <p>
                             We know that not everyone has the resources to join
-                            us live. That’s ok. You can purchase the UX Metrics
-                            to Drive Your Organization's video series.
+                            us live. That’s ok. You can purchase the Adv.
+                            Strategic UX Research video series.
                         </p>
                         <p>
-                            You can watch all nine sessions of the
-                            Outcome-driven UX Metrics Course broken up into two
+                            You can watch all eight sessions of the Adv.
+                            Strategic UX Research Course broken up into two
                             parts in our UX Strategy Essentials Library.
                         </p>
-                        <span>
-                            <b>What’s included for $227:</b>
-                        </span>
+                        <h3>What’s included for $227:</h3>
                         <ul>
                             <li>
                                 The lectures and notes from all eight topics.
@@ -164,16 +356,23 @@ export default function Home() {
                         </ul>
                         <span>Access is for 90 days.</span>
                     </div>
-                    <PurchaseBox
-                        src="./images/Metrics-laptop.png"
-                        text="Outcome-Driven UX Metrics Video Series"
-                        price="$227"
-                        buttonText="PURCHASE VIDEO SERIES"
-                    />
-                </VideoSeries>
-            </div>
-            <Footer />
-            {/*<FloatingComponent /> */}
+                </section>
+                <div className="purchase-box">
+                    <img src="./images/laptopResearch.png" alt="computer" />
+                    <div className="purchase-box-text">
+                        <h3>Adv. Strategic UX Research Video Series</h3>
+                        <p className="purchase-box-price">$277</p>
+                    </div>
+                    <button className="btn-shadow btn purchase-box-button">
+                        <a
+                            className="purchase-box-button-white"
+                            href="https://essentials.centercentre.com/research"
+                        >
+                            PURCHASE VIDEO SERIES
+                        </a>
+                    </button>
+                </div>
+            </Section>
         </div>
     );
 }

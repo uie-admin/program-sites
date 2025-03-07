@@ -1,12 +1,12 @@
 // components
-import HorizontalCohortSelector from "../components/CohortSelectors/HorizontalCohortSelector";
-import Testimonial from "../components/Content/Testimonial";
-import Section from "../components/Layout/Section";
-import Headline from "../components/Content/Headline";
-import Float from "../components/Utility/Float";
-import Placeholder from "../components/Utility/Placeholder";
-import DesktopOnly from "../components/Utility/DesktopOnly";
-import MobileOnly from "../components/Utility/MobileOnly";
+import HorizontalCohortSelector from "../../../shared/components/CohortSelectors/HorizontalCohortSelector";
+import Testimonial from "../../../shared/components/Content/Testimonial";
+import Section from "../../../shared/components/Layout/Section";
+import Headline from "../../../shared/components/Content/Headline";
+import Float from "../../../shared/components/Utility/Float";
+import Placeholder from "../../../shared/components/Utility/Placeholder";
+import DesktopOnly from "../../../shared/components/Utility/DesktopOnly";
+import MobileOnly from "../../../shared/components/Utility/MobileOnly";
 
 function TeamsTestimonial() {
     return (

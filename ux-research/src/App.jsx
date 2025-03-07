@@ -15,10 +15,10 @@ import Cohort from "./pages/Cohort";
 import CohortSchedule from "./pages/CohortSchedule";
 
 // Global Layout Components
-import Header from "./components/Layout/Header";
-import Footer from "./components/Layout/Footer";
+import Header from "../../shared/components/Layout/Header";
+import Footer from "../../shared/components/Layout/Footer";
 
-import { fetchCohorts } from "./components/CalendarV2/CalendarDataV2";
+import { fetchCohorts } from "../../shared/components/CalendarV2/CalendarDataV2";
 
 const NUM_COHORTS = 3;
 export const CohortContext = createContext(null);

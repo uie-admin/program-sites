@@ -1,0 +1,31 @@
+.jaredSpool {
+    padding: 3rem 0;
+    background-color: #f4f4f4;
+
+    .inner-column {
+        display: flex;
+    }
+}
+
+.jaredSpool-image {
+    width: 15em;
+    margin: 1em;
+}
+
+.jaredSpool p {
+    font-weight: 600;
+    /* line-height: 1.4em; */
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjust the width for mobile devices */
+    .article-content p,
+    li,
+    h2 {
+        max-width: 100%;
+    }
+
+    .jaredSpool-image {
+        display: none;
+    }
+}

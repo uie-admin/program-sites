@@ -1,13 +1,13 @@
 // Components
 import Testimonial from "../../../shared/components/Content/Testimonial.jsx";
-import Section from "../components/Layout/Section.js";
+import Section from "../../../shared/components/Layout/Section.jsx";
 import IconList from "../../../shared/components/Content/IconList.jsx";
 import PriceList from "../../../shared/components/Content/PriceList.jsx";
 
 // Widgets
-import HorizontalCohortSelector from "../components/CohortSelectors/HorizontalCohortSelector.js";
-import VerticalCohortSelector from "../components/CohortSelectors/VerticalCohortSelector.js";
-import CalendarV2 from "../components/CalendarV2/CohortCalendar.js";
+import HorizontalCohortSelector from "../../../shared/components/CohortSelectors/HorizontalCohortSelector";
+import VerticalCohortSelector from "../../../shared/components/CohortSelectors/VerticalCohortSelector";
+import CalendarV2 from "../../../shared/components/CalendarV2/CohortCalendar.jsx";
 import Headline from "../../../shared/components/Content/Headline.jsx";
 import PageSticky from "../../../shared/components/Utility/PageSticky.jsx";
 import Sticky from "../../../shared/components/Utility/Sticky.jsx";

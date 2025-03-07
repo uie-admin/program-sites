@@ -1,13 +1,13 @@
 // components
-import VerticalCohortSelector from "../components/CohortSelectors/VerticalCohortSelector";
-import Section from "../components/Layout/Section";
-import HorizontalCohortSelector from "../components/CohortSelectors/HorizontalCohortSelector";
-import TopicList from "../components/Content/TopicList";
-import Headline from "../components/Content/Headline";
-import PageSticky from "../components/Utility/PageSticky";
-import Placeholder from "../components/Utility/Placeholder";
-import DesktopOnly from "../components/Utility/DesktopOnly";
-import MobileOnly from "../components/Utility/MobileOnly";
+import VerticalCohortSelector from "../../../shared/components/CohortSelectors/VerticalCohortSelector";
+import Section from "../../../shared/components/Layout/Section";
+import HorizontalCohortSelector from "../../../shared/components/CohortSelectors/HorizontalCohortSelector";
+import TopicList from "../../../shared/components/Content/TopicList";
+import Headline from "../../../shared/components/Content/Headline";
+import PageSticky from "../../../shared/components/Utility/PageSticky";
+import Placeholder from "../../../shared/components/Utility/Placeholder";
+import DesktopOnly from "../../../shared/components/Utility/DesktopOnly";
+import MobileOnly from "../../../shared/components/Utility/MobileOnly";
 
 export default function Topics() {
     return (
