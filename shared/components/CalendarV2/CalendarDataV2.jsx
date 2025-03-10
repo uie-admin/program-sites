@@ -53,24 +53,16 @@ import axios from "axios";
 const HOURS_BEFORE_CUTOFF = 2;
 
 const cohortTables = {
-    RESEARCH: {
-        KEY: import.meta.env.VITE_RESEARCH_AIRTABLE_API_KEY,
-        ID: import.meta.env.VITE_RESEARCH_BASE_ID,
-
-        COHORTS: import.meta.env.VITE_COHORT_TABLES.split(","),
-    },
-    METRICS: {
-        KEY: import.meta.env.VITE_METRICS_AIRTABLE_API_KEY,
-        ID: import.meta.env.VITE_METRICS_BASE_ID,
-        COHORTS: import.meta.env.VITE_COHORT_TABLES.split(","),
-    },
+    KEY: import.meta.env.VITE_AIRTABLE_API_KEY,
+    ID: import.meta.env.VITE_BASE_ID,
+    COHORTS: import.meta.env.VITE_COHORT_TABLES.split(","),
 };
 
-export const fetchCohorts = async (tableName) => {
+export const fetchCohorts = async () => {
     console.log(cohortTables);
     const cohortDatas = await Promise.all(
-        cohortTables[tableName]["COHORTS"].map(async (cohortID) => {
-            return fetchCohort(tableName, cohortID);
+        cohortTables["COHORTS"].map(async (cohortID) => {
+            return fetchCohort(cohortID);
         })
     );
     const now = new Date();
@@ -79,10 +71,7 @@ export const fetchCohorts = async (tableName) => {
         return cohort.sort((a, b) => a.week - b.week);
     });
 
-    {
-        /* filter out cohorts that have started already by subtracting 2 hours from the start time. If the calculated time is greater than now, keep the cohort. */
-    }
-
+    /* filter out cohorts that have started already by subtracting 2 hours from the start time. If the calculated time is greater than now, keep the cohort. */
     upcomingCohorts = upcomingCohorts.filter((cohortData) => {
         const cutoffDate = new Date(cohortData[0].watchStart1);
         cutoffDate.setHours(cutoffDate.getHours() - HOURS_BEFORE_CUTOFF);
@@ -96,10 +85,10 @@ export const fetchCohorts = async (tableName) => {
     return upcomingCohorts;
 };
 
-const fetchCohort = async (tableName, cohortID) => {
-    const url = `https://api.airtable.com/v0/${cohortTables[tableName]["ID"]}/${cohortID}`;
+const fetchCohort = async (cohortID) => {
+    const url = `https://api.airtable.com/v0/${cohortTables["ID"]}/${cohortID}`;
     const headers = {
-        Authorization: `Bearer ${cohortTables[tableName]["KEY"]}`,
+        Authorization: `Bearer ${cohortTables["KEY"]}`,
     };
 
     try {
