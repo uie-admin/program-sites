@@ -228,7 +228,7 @@ export default function Home() {
                 </Sticky>
             </Section>
 
-            <CalendarV2 cohortID="B" />
+            <CalendarV2 cohortID="1" />
 
             <HorizontalCohortSelector />
 

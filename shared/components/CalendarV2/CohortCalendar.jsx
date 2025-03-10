@@ -85,10 +85,11 @@ export default function CohortCalendar({ cohortIndex }) {
                                             <div className="mobile-row">
                                                 <img
                                                     src={playButton1}
-                                                    className={`scheduleIconImg ${expandedSections[index]
+                                                    className={`scheduleIconImg ${
+                                                        expandedSections[index]
                                                             ? "rotated"
                                                             : ""
-                                                        }`}
+                                                    }`}
                                                     alt="playButton1"
                                                 />
                                                 <div className="classTitle">
@@ -169,12 +170,13 @@ export default function CohortCalendar({ cohortIndex }) {
                                             <div className="mobile-row">
                                                 <img
                                                     src={playButton2}
-                                                    className={`scheduleIconImg ${expandedSections[
+                                                    className={`scheduleIconImg ${
+                                                        expandedSections[
                                                             index + 0.1
                                                         ]
                                                             ? "rotated"
                                                             : ""
-                                                        }`}
+                                                    }`}
                                                     alt="playButton2"
                                                 />
                                                 <div className="classTitle">

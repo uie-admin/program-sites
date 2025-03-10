@@ -27,7 +27,7 @@ function App() {
     const [cohorts, setCohorts] = useState(null);
 
     useEffect(() => {
-        fetchCohorts("RESEARCH").then(setCohorts);
+        fetchCohorts("METRICS").then(setCohorts);
     }, []);
 
     return (

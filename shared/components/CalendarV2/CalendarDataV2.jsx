@@ -56,27 +56,18 @@ const cohortTables = {
     RESEARCH: {
         KEY: import.meta.env.VITE_RESEARCH_AIRTABLE_API_KEY,
         ID: import.meta.env.VITE_RESEARCH_BASE_ID,
-        COHORTS: [
-            import.meta.env.VITE_RESEARCH_TABLE_ID_COHORTA,
-            import.meta.env.VITE_RESEARCH_TABLE_ID_COHORTB,
-            import.meta.env.VITE_RESEARCH_TABLE_ID_COHORTC,
-        ],
+
+        COHORTS: import.meta.env.VITE_COHORT_TABLES.split(","),
     },
     METRICS: {
         KEY: import.meta.env.VITE_METRICS_AIRTABLE_API_KEY,
         ID: import.meta.env.VITE_METRICS_BASE_ID,
-        A: import.meta.env.VITE_METRICS_TABLE_ID_COHORT1,
-        B: import.meta.env.VITE_METRICS_TABLE_ID_COHORT2,
-        C: import.meta.env.VITE_METRICS_TABLE_ID_COHORT3,
-        D: import.meta.env.VITE_METRICS_TABLE_ID_COHORT4,
-        E: import.meta.env.VITE_METRICS_TABLE_ID_COHORT5,
-        F: import.meta.env.VITE_METRICS_TABLE_ID_COHORT6,
-        G: import.meta.env.VITE_METRICS_TABLE_ID_COHORT7,
-        H: import.meta.env.VITE_METRICS_TABLE_ID_COHORT8,
+        COHORTS: import.meta.env.VITE_COHORT_TABLES.split(","),
     },
 };
 
 export const fetchCohorts = async (tableName) => {
+    console.log(cohortTables);
     const cohortDatas = await Promise.all(
         cohortTables[tableName]["COHORTS"].map(async (cohortID) => {
             return fetchCohort(tableName, cohortID);
@@ -230,13 +221,14 @@ export const timezones = [
 
 const getTimezoneOffset = (timezone) => {
     const now = new Date();
-    return (tzOffset =
+    return (
         new Intl.DateTimeFormat("en-US", {
             timeZone: timezone,
             timeZoneName: "short",
         })
             .formatToParts(now)
-            .find((parts) => parts.type === "timeZoneName")?.value || "");
+            .find((parts) => parts.type === "timeZoneName")?.value || ""
+    );
 
     // const offsetPart = tzOffset.find((part) => part.type === "timeZoneName");
     // return offsetPart ? offsetPart.value : "";

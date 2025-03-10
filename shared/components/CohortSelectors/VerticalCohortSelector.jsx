@@ -14,27 +14,32 @@ export default function VerticalCohortSelector({ pageSticky }) {
             />
             <span>Next Cohorts:</span>
             <div>
-                {
-                    cohorts ? cohorts.map((cohort, index) => (
-                        <div className="cohort-choice" key={"cohort-choice" + index}>
+                {cohorts ? (
+                    cohorts.map((cohort, index) => (
+                        <div
+                            className="cohort-choice"
+                            key={"cohort-choice" + index}
+                        >
                             <VerticalCohort
                                 eventDates={cohort}
                                 scheduleLink={`/Cohort${index + 1}-Schedule`}
                                 cohortLink={`/Cohort${index + 1}`}
                             />
                         </div>
-                    )) : (<div className="cohort-choice" key={"cohort-choice"}>
+                    ))
+                ) : (
+                    <div className="cohort-choice" key={"cohort-choice"}>
                         <VerticalCohort
                             scheduleLink={`/Cohort${1}-Schedule`}
                             cohortLink={`/Cohort${1}`}
                         />
-                    </div>)
-                }
+                    </div>
+                )}
             </div>
             <span className="mt-2">8 or more team members?</span>
             <br />
             <Link to="/teams">Explore private team courses</Link>
-        </div >
+        </div>
     );
 }
 
