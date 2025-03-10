@@ -20,14 +20,20 @@ export default function Topics() {
                         paddingTop={40}
                         paddingBottom={40}
                     >
-                        <VerticalCohortSelector />
+                        <VerticalCohortSelector
+                            logoImage="UxMetricsLogo"
+                            altText="Outcome-Drive UX Metrics"
+                        />
                     </PageSticky>
                 </DesktopOnly>
             </Headline>
 
             <Section name="courseTopics-intro">
                 <MobileOnly>
-                    <VerticalCohortSelector />
+                    <VerticalCohortSelector
+                        logoImage="UxMetricsLogo"
+                        altText="Outcome-Drive UX Metrics"
+                    />
                 </MobileOnly>
                 <div className="courseTopics-content">
                     <h2>
@@ -74,7 +80,10 @@ export default function Topics() {
                     </p>
                 </div>
                 <Placeholder>
-                    <VerticalCohortSelector />
+                    <VerticalCohortSelector
+                        logoImage="UxMetricsLogo"
+                        altText="Outcome-Drive UX Metrics"
+                    />
                 </Placeholder>
             </Section>
             <Section>

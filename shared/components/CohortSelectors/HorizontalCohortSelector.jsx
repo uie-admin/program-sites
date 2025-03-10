@@ -16,7 +16,6 @@ export default function HorizontalCohortSelector() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-
     return (
         <div className="horizontalCohortSelector">
             <div className="inner-column flex">
@@ -29,23 +28,29 @@ export default function HorizontalCohortSelector() {
                     </b>
                 </span>
                 <div className="cohort-1-container">
-                    {
-                        cohorts ? cohorts.map((cohort, index) => (
-                            <div className="cohort-choice" key={"cohort-choice" + index}>
+                    {cohorts ? (
+                        cohorts.map((cohort, index) => (
+                            <div
+                                className="cohort-choice"
+                                key={"cohort-choice" + index}
+                            >
                                 <HorizontalCohort
                                     eventDates={cohort}
-                                    scheduleLink={`/Cohort${index + 1}-Schedule`}
+                                    scheduleLink={`/Cohort${
+                                        index + 1
+                                    }-Schedule`}
                                     cohortLink={`/Cohort${index + 1}`}
                                 />
                             </div>
-                        )) : (<div className="cohort-choice" key={"cohort-choice"}>
+                        ))
+                    ) : (
+                        <div className="cohort-choice" key={"cohort-choice"}>
                             <HorizontalCohort
                                 scheduleLink={`/Cohort${1}-Schedule`}
                                 cohortLink={`/Cohort${1}`}
                             />
-                        </div>)
-                    }
-
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

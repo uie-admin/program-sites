@@ -23,7 +23,10 @@ export default function Research() {
                         paddingTop={40}
                         paddingBottom={20}
                     >
-                        <VerticalCohortSelector />
+                        <VerticalCohortSelector
+                            logoImage="UxMetricsLogo"
+                            altText="Outcome-Drive UX Metrics"
+                        />
                     </PageSticky>
                 </DesktopOnly>
             </Headline>

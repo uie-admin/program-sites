@@ -18,9 +18,12 @@ import CohortSchedule from "./pages/CohortSchedule";
 import Header from "../../shared/components/Layout/Header";
 import Footer from "../../shared/components/Layout/Footer";
 
-import { fetchCohorts, CohortContext } from "../../shared/components/CalendarV2/CalendarDataV2";
+import {
+    fetchCohorts,
+    CohortContext,
+} from "../../shared/components/CalendarV2/CalendarDataV2";
 
-const NUM_COHORTS = import.meta.env.VITE_COHORT_TABLES.split(',').length;
+const NUM_COHORTS = import.meta.env.VITE_COHORT_TABLES.split(",").length;
 
 function App() {
     const [cohorts, setCohorts] = useState(null);
@@ -32,7 +35,11 @@ function App() {
     return (
         <Router>
             <CohortContext.Provider value={cohorts}>
-                <Header text="Advanced Strategic UX Research" />
+                <Header
+                    text="Advanced Strategic UX Research"
+                    logoImage="UxResearchLogo"
+                    altText="Advanced Strategic UX Research"
+                />
                 <Routes>
                     {/* Define the routes for each page */}
                     <Route path="/" element={<Home />} />

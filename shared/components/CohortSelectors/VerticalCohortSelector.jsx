@@ -2,14 +2,14 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CohortContext } from "../CalendarV2/CalendarDataV2";
 
-export default function VerticalCohortSelector({ pageSticky }) {
+export default function VerticalCohortSelector({ logoImage, altText }) {
     const cohorts = useContext(CohortContext);
 
     return (
         <div className="verticalCohortSelector">
             <img
-                src="/images/UxResearchLogo.png"
-                alt="Advanced Strategic UX Research"
+                src={`/images/${logoImage}.png`}
+                alt={altText}
                 className="cohortSelector-image"
             />
             <span>Next Cohorts:</span>

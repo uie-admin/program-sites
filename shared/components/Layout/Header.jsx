@@ -8,7 +8,7 @@ import PageSticky from "../Utility/PageSticky";
 import DesktopOnly from "../Utility/DesktopOnly";
 import MobileOnly from "../Utility/MobileOnly";
 
-export default function Header({ title }) {
+export default function Header({ title, logoImage, altText }) {
     return (
         <>
             <Navigation />
@@ -46,11 +46,17 @@ export default function Header({ title }) {
                                 paddingTop={40}
                                 paddingBottom={40}
                             >
-                                <VerticalCohortSelector />
+                                <VerticalCohortSelector
+                                    logoImage={logoImage}
+                                    altText={altText}
+                                />
                             </PageSticky>
                         </DesktopOnly>
                         <MobileOnly>
-                            <VerticalCohortSelector />
+                            <VerticalCohortSelector
+                                logoImage="UxResearchLogo"
+                                altText="Advanced Strategic UX Research"
+                            />
                         </MobileOnly>
                     </PageFilter>
                 </div>

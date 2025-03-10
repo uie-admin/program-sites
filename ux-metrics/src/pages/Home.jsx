@@ -36,7 +36,10 @@ export default function Home() {
             >
                 <DesktopOnly>
                     <Placeholder>
-                        <VerticalCohortSelector />
+                        <VerticalCohortSelector
+                            logoImage="UxMetricsLogo"
+                            altText="Outcome-Drive UX Metrics"
+                        />
                     </Placeholder>
                 </DesktopOnly>
             </Headline>
@@ -165,7 +168,10 @@ export default function Home() {
                 </div>
                 {/* <CourseScheduleTest /> */}
                 <Placeholder>
-                    <VerticalCohortSelector />
+                    <VerticalCohortSelector
+                        logoImage="UxMetricsLogo"
+                        altText="Outcome-Drive UX Metrics"
+                    />
                 </Placeholder>
             </Section>
 
@@ -239,7 +245,10 @@ export default function Home() {
                 </div>
                 <Sticky>
                     <div className="hide-on-mobile">
-                        <VerticalCohortSelector />
+                        <VerticalCohortSelector
+                            logoImage="UxMetricsLogo"
+                            altText="Outcome-Drive UX Metrics"
+                        />
                     </div>
                 </Sticky>
             </Section>
@@ -339,7 +348,10 @@ export default function Home() {
                     />
                 </div>
                 <Sticky>
-                    <VerticalCohortSelector />
+                    <VerticalCohortSelector
+                        logoImage="UxMetricsLogo"
+                        altText="Outcome-Drive UX Metrics"
+                    />
                 </Sticky>
             </Section>
 

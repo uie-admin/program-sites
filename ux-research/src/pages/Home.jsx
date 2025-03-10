@@ -34,7 +34,10 @@ export default function Home() {
             >
                 <DesktopOnly>
                     <Placeholder>
-                        <VerticalCohortSelector />
+                        <VerticalCohortSelector
+                            logoImage="UxResearchLogo"
+                            altText="Advanced Strategic UX Research"
+                        />
                     </Placeholder>
                 </DesktopOnly>
             </Headline>
@@ -164,7 +167,10 @@ export default function Home() {
                     {/* <CourseScheduleTest /> */}
                 </div>
                 <Placeholder>
-                    <VerticalCohortSelector />
+                    <VerticalCohortSelector
+                        logoImage="UxResearchLogo.png"
+                        altText="Advanced Strategic UX Research"
+                    />
                 </Placeholder>
             </Section>
 
@@ -223,7 +229,10 @@ export default function Home() {
                 </div>
                 <Sticky>
                     <div className="hide-on-mobile">
-                        <VerticalCohortSelector />
+                        <VerticalCohortSelector
+                            logoImage="UxResearchLogo"
+                            altText="Advanced Strategic UX Research"
+                        />
                     </div>
                 </Sticky>
             </Section>
@@ -324,7 +333,10 @@ export default function Home() {
                     />
                 </div>
                 <Sticky>
-                    <VerticalCohortSelector />
+                    <VerticalCohortSelector
+                        logoImage="UxResearchLogo"
+                        altText="Advanced Strategic UX Research"
+                    />
                 </Sticky>
             </Section>
 
