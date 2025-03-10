@@ -20,7 +20,7 @@ import Footer from "../../shared/components/Layout/Footer";
 
 import { fetchCohorts, CohortContext } from "../../shared/components/CalendarV2/CalendarDataV2";
 
-const NUM_COHORTS = 3;
+const NUM_COHORTS = import.meta.env.VITE_COHORT_TABLES.split(',').length;
 
 function App() {
     const [cohorts, setCohorts] = useState(null);

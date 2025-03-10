@@ -81,7 +81,7 @@ export const fetchCohorts = async () => {
     });
 
     upcomingCohorts = upcomingCohorts.sort(
-        (a, b) => a[0].watchStart1 - b[0].watchStart1
+        (a, b) => new Date(a[0].watchStart1) > new Date(b[0].watchStart1)
     );
 
     return upcomingCohorts;
@@ -93,11 +93,10 @@ const fetchCohort = async (cohortID) => {
         Authorization: `Bearer ${cohortTables["KEY"]}`,
     };
 
-    console.log(url)
 
     try {
         const response = await axios.get(url, { headers });
-        return response.data.records.map((record) => ({
+        const res = response.data.records.map((record) => ({
             week: record.fields.Week,
             start: record.fields.CohortOutput1,
             end: record.fields.CohortOutput2,
@@ -122,6 +121,7 @@ const fetchCohort = async (cohortID) => {
 
             embedURL: record.fields.EmbedURL,
         }));
+        return res;
     } catch (error) {
         console.error("Error fetching data from Airtable", error);
         return [];
