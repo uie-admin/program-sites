@@ -3,7 +3,7 @@ import CohortCalendar from "../../../shared/components/CalendarV2/CohortCalendar
 import HorizontalCohortSelector from "../../../shared/components/CohortSelectors/HorizontalCohortSelector";
 import Headline from "../../../shared/components/Content/Headline";
 import { useState, useEffect, useContext } from "react";
-import { CohortContext } from "../App";
+import { CohortContext } from "../../../shared/components/CalendarV2/CalendarDataV2";
 
 export default function CohortSchedule({ cohortIndex }) {
     const cohorts = useContext(CohortContext);

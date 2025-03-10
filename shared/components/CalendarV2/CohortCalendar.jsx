@@ -5,7 +5,7 @@ import playButton1 from "./playButton1.png";
 import playButton2 from "./playButton2.png";
 import "./CalendarV2.css";
 import { formatToLocalTime, timezoneDropdown } from "./CalendarDataV2";
-import { CohortContext } from "../../../ux-research/src/App";
+import { CohortContext } from "./CalendarDataV2";
 
 export default function CohortCalendar({ cohortIndex }) {
     const [expandedSections, setExpandedSections] = useState({});
@@ -85,11 +85,10 @@ export default function CohortCalendar({ cohortIndex }) {
                                             <div className="mobile-row">
                                                 <img
                                                     src={playButton1}
-                                                    className={`scheduleIconImg ${
-                                                        expandedSections[index]
+                                                    className={`scheduleIconImg ${expandedSections[index]
                                                             ? "rotated"
                                                             : ""
-                                                    }`}
+                                                        }`}
                                                     alt="playButton1"
                                                 />
                                                 <div className="classTitle">
@@ -170,13 +169,12 @@ export default function CohortCalendar({ cohortIndex }) {
                                             <div className="mobile-row">
                                                 <img
                                                     src={playButton2}
-                                                    className={`scheduleIconImg ${
-                                                        expandedSections[
+                                                    className={`scheduleIconImg ${expandedSections[
                                                             index + 0.1
                                                         ]
                                                             ? "rotated"
                                                             : ""
-                                                    }`}
+                                                        }`}
                                                     alt="playButton2"
                                                 />
                                                 <div className="classTitle">

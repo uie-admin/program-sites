@@ -5,7 +5,7 @@ import Headline from "../../../shared/components/Content/Headline";
 // components
 import SpiffyCheckout from "../../../shared/components/Integrations/SpiffyCheckout";
 import Section from "../../../shared/components/Layout/Section";
-import { CohortContext } from "../App";
+import { CohortContext } from "../../../shared/components/CalendarV2/CalendarDataV2";
 
 export default function Cohort({ cohortIndex }) {
     const [loadingTime, setLoadingTime] = useState(true);

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { CohortContext } from "../../../ux-research/src/App";
+import { CohortContext } from "../CalendarV2/CalendarDataV2";
 
 export default function VerticalCohortSelector({ pageSticky }) {
     const cohorts = useContext(CohortContext);

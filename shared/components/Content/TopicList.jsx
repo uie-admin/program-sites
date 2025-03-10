@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import ReactMarkdown from "react-markdown";
 import Section from "../Layout/Section";
-import { CohortContext } from "../../../ux-research/src/App";
+import { CohortContext } from "../CalendarV2/CalendarDataV2";
 
 export default function TopicList({ }) {
     const cohorts = useContext(CohortContext);

@@ -18,16 +18,15 @@ import CohortSchedule from "./pages/CohortSchedule";
 import Header from "../../shared/components/Layout/Header";
 import Footer from "../../shared/components/Layout/Footer";
 
-import { fetchCohorts } from "../../shared/components/CalendarV2/CalendarDataV2";
+import { fetchCohorts, CohortContext } from "../../shared/components/CalendarV2/CalendarDataV2";
 
 const NUM_COHORTS = 3;
-export const CohortContext = createContext(null);
 
 function App() {
     const [cohorts, setCohorts] = useState(null);
 
     useEffect(() => {
-        fetchCohorts("METRICS").then(setCohorts);
+        fetchCohorts().then(setCohorts);
     }, []);
 
     return (

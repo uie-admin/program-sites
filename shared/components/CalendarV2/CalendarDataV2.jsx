@@ -1,4 +1,5 @@
 import axios from "axios";
+import { createContext } from "react";
 
 // UPDATE CALENDAR DATA HERE
 // https://airtable.com/appKDcbRP09tSx7o5/tblxPgptk13IWNYbl/viwxiPaHV4QdoIHbD?blocks=hide
@@ -51,6 +52,7 @@ import axios from "axios";
 // # METRICS
 
 const HOURS_BEFORE_CUTOFF = 2;
+export const CohortContext = createContext(null);
 
 const cohortTables = {
     KEY: import.meta.env.VITE_AIRTABLE_API_KEY,
@@ -90,6 +92,8 @@ const fetchCohort = async (cohortID) => {
     const headers = {
         Authorization: `Bearer ${cohortTables["KEY"]}`,
     };
+
+    console.log(url)
 
     try {
         const response = await axios.get(url, { headers });
