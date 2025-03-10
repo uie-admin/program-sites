@@ -230,13 +230,16 @@ export const timezones = [
 
 const getTimezoneOffset = (timezone) => {
     const now = new Date();
-    const tzOffset = new Intl.DateTimeFormat("en-US", {
-        timeZone: timezone,
-        timeZoneName: "short",
-    }).formatToParts(now);
+    return (tzOffset =
+        new Intl.DateTimeFormat("en-US", {
+            timeZone: timezone,
+            timeZoneName: "short",
+        })
+            .formatToParts(now)
+            .find((parts) => parts.type === "timeZoneName")?.value || "");
 
-    const offsetPart = tzOffset.find((part) => part.type === "timeZoneName");
-    return offsetPart ? offsetPart.value : "";
+    // const offsetPart = tzOffset.find((part) => part.type === "timeZoneName");
+    // return offsetPart ? offsetPart.value : "";
 };
 
 // Updated dropdown component
