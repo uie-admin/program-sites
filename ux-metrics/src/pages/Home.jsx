@@ -19,6 +19,7 @@ export default function Home() {
         <div className="App">
             <Headline
                 split
+                color="--metrics-accent-1"
                 mobileTop="3em"
                 title={
                     <>
@@ -170,7 +171,7 @@ export default function Home() {
 
             <Section
                 name="testimonials-container"
-                color="--accent-1-overlay"
+                color="--metrics-accent-1-overlay"
                 bg="pixel-texture.jpg"
             >
                 <Testimonial icon="star.png" author="T.H., Design Consultant:">
