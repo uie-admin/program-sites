@@ -1,9 +1,9 @@
 :root {
-    --calm-voice: 1.25rem; /* 20px */
-    --headline-voice: 1.5rem; /* 24px */
-    --mobile-small-voice: 1.25rem; /* 20px */
-    --loud-voice: 1.875rem; /* 30px */
-    --attention-voice: 3.75rem; /* 60px */
+    --calm-voice: 1rem; /* 20px */
+    --headline-voice: 1.2rem; /* 24px */
+    --mobile-small-voice: 1rem; /* 20px */
+    --loud-voice: 1.5rem; /* 30px */
+    --attention-voice: 3rem; /* 48px */
 }
 body {
     font-family: "Open Sans", sans-serif;
