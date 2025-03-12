@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CohortContext } from "../CalendarV2/CalendarDataV2";
+import GenericButton from "../Buttons/GenericButton";
 
 export default function VerticalCohortSelector({ logoImage, altText }) {
     const cohorts = useContext(CohortContext);
@@ -58,11 +59,11 @@ export function VerticalCohort({ eventDates, scheduleLink, cohortLink }) {
                 )}
                 <Link to={scheduleLink}>See Schedule</Link>
             </div>
-            <button className=" join-cohort btn-shadow">
-                <Link to={cohortLink} className="cohortSelector-button-link">
-                    Join Cohort
-                </Link>
-            </button>
+            <GenericButton
+                cohortLink={cohortLink}
+                text="Join Us"
+                btnClass="join-cohort"
+            />
         </div>
     );
 }

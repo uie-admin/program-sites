@@ -12,18 +12,18 @@ export default function Header({ title, logoImage, altText }) {
     return (
         <>
             <Navigation />
-            <Section name="header-background" bg="pixel-texture.jpg">
+            <Section name="header-background" bg="square-background.png">
                 <h1>{title}</h1>
                 <p className="online-course strong">
                     An Online Course with Jared Spool
                 </p>
                 <div className="flex relative">
                     <div className="hero">
-                        <img
+                        {/* <img
                             className="research-logo"
                             src="/images/UxResearchLogo.png"
                             alt="Adv. UX Research"
-                        ></img>
+                        ></img> */}
                         <img
                             className="jared"
                             src="/images/Jared_Spool 2.png"

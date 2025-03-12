@@ -12,7 +12,11 @@ import MobileOnly from "../../../shared/components/Utility/MobileOnly";
 export default function Topics() {
     return (
         <div className="topics">
-            <Headline title={<h1> Course Topics</h1>} split>
+            <Headline
+                title={<h1> Course Topics</h1>}
+                color="--metrics-accent-1"
+                split
+            >
                 <DesktopOnly>
                     <PageSticky
                         topBoundingElement={".headline"}

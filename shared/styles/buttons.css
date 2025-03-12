@@ -1,5 +1,4 @@
 .join-cohort {
-    background-color: var(--accent-2);
     color: var(--btn-ink);
     height: 40px;
     width: 110px;
@@ -8,29 +7,24 @@
     font-weight: 700;
 }
 
-.horizontalCohortSelector .join-cohort {
-    background-color: var(--accent-1);
-}
-
-.video-series .btn {
-    background-color: var(--accent-1);
-}
-
-.schedule-aside .btn {
-    background-color: var(--accent-1);
-}
-
 .schedule-button {
-    background-color: var(--accent-2);
+    background-color: var(--call-jared);
     color: var(--btn-ink);
-    height: 40px;
-    width: 100%;
+    min-width: 300px;
+    padding: 10px 25px;
     border: 2px solid black;
     border-radius: 6px;
     font-weight: 700;
 }
 
-.btn {
+.purchase-box-button {
+    background: #ec621d;
+    padding: 0.5em;
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+button {
     color: white;
     border: 2px solid black;
     border-radius: 6px;
@@ -62,4 +56,10 @@
         -1px 1px 0px 0px rgb(0, 0, 0), -3px 3px 0px 0px rgba(0, 0, 0, 1);
     top: 3px;
     left: -3px;
+}
+
+@media (max-width: 768px) {
+    .schedule-button {
+        min-width: 240px;
+    }
 }

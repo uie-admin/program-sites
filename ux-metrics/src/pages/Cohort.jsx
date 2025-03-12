@@ -57,7 +57,10 @@ export default function Cohort({ cohortIndex }) {
 
     return (
         <div id="Cohort">
-            <Headline title={<h1>Join the {month} Cohort</h1>} />
+            <Headline
+                title={<h1>Join the {month} Cohort</h1>}
+                color="--metrics-accent-1"
+            />
 
             <Section className="inner-column" split>
                 <div className="width-500">

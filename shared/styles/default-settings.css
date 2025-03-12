@@ -22,6 +22,8 @@
     --metrics-accent-1-overlay: hsla(183, 95%, 21%, 0.9);
     --metrics-accent-2: hsla(327, 84%, 33%, 1);
 
+    --call-jared: hsl(183, 98%, 20%);
+
     /* Font */
     --font-bold: 600;
 
@@ -31,14 +33,6 @@
 
     /* Spacing */
     --text-padding: 1em;
-}
-
-.metrics-global #headline {
-    background-color: var(--metrics-accent-1);
-}
-
-.research-global #headline {
-    background-color: var(--research-accent-1);
 }
 
 @media only screen and (max-width: 1200px) {

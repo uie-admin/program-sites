@@ -28,7 +28,11 @@ export default function Research() {
 
     return (
         <div className="outcomes">
-            <Headline title={<h1> Why UX Research?</h1>} split>
+            <Headline
+                title={<h1> Why UX Research?</h1>}
+                split
+                color="--research-accent-1"
+            >
                 <DesktopOnly>
                     <PageSticky
                         topBoundingElement={".headline"}
@@ -36,7 +40,10 @@ export default function Research() {
                         paddingTop={40}
                         paddingBottom={20}
                     >
-                        <VerticalCohortSelector />
+                        <VerticalCohortSelector
+                            logoImage="UxResearchLogo"
+                            altText="Advanced Strategic UX Research"
+                        />
                     </PageSticky>
                 </DesktopOnly>
             </Headline>
@@ -101,7 +108,10 @@ export default function Research() {
                     </p>
                 </div>
                 <Placeholder>
-                    <VerticalCohortSelector />
+                    <VerticalCohortSelector
+                        logoImage="UxResearchLogo"
+                        altText="Advanced Strategic UX Research"
+                    />
                 </Placeholder>
             </Section>
 

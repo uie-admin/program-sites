@@ -15,7 +15,11 @@ export default function Research() {
 
     return (
         <div className="outcomes">
-            <Headline title={<h1> Why UX Research?</h1>} split>
+            <Headline
+                title={<h1> Why UX Research?</h1>}
+                color="--metrics-accent-1"
+                split
+            >
                 <DesktopOnly>
                     <PageSticky
                         topBoundingElement={".headline"}

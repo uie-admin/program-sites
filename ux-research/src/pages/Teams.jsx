@@ -7,6 +7,7 @@ import Float from "../../../shared/components/Utility/Float";
 import Placeholder from "../../../shared/components/Utility/Placeholder";
 import DesktopOnly from "../../../shared/components/Utility/DesktopOnly";
 import MobileOnly from "../../../shared/components/Utility/MobileOnly";
+import GenericButton from "../../../shared/components/Buttons/GenericButton";
 
 function TeamsTestimonial() {
     return (
@@ -36,7 +37,11 @@ function TeamsTestimonial() {
 export default function Teams() {
     return (
         <div className="teams">
-            <Headline title={<h1> Sign Up Your Team</h1>} split>
+            <Headline
+                title={<h1> Sign Up Your Team</h1>}
+                split
+                color="--research-accent-1"
+            >
                 <DesktopOnly>
                     <Float>
                         <TeamsTestimonial />
@@ -180,16 +185,21 @@ export default function Teams() {
                         contact Jared to discuss the benefits and costs.
                     </p>
                 </div>
-                <div className="">
+                <div className="call-jared">
                     <h3 className="no-margin">Talk to Jared Over a Call</h3>
-                    <button className=" btn btn-shadow green-team-button">
+                    <GenericButton
+                        text="Contact Us and Talk to Jared"
+                        externalLink="https://jmspool-mentoring.youcanbook.me/"
+                        btnClass="schedule-button"
+                    />
+                    {/* <button className=" btn btn-shadow green-team-button">
                         <a
                             className="purchase-box-button-white"
                             href="https://jmspool-mentoring.youcanbook.me/"
                         >
                             Contact Us and Talk to Jared
                         </a>
-                    </button>
+                    </button> */}
                 </div>
             </Section>
         </div>

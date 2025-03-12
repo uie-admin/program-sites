@@ -12,12 +12,14 @@ import Headline from "../../../shared/components/Content/Headline.jsx";
 import Sticky from "../../../shared/components/Utility/Sticky.jsx";
 import Placeholder from "../../../shared/components/Utility/Placeholder.jsx";
 import DesktopOnly from "../../../shared/components/Utility/DesktopOnly.jsx";
+import GenericButton from "../../../shared/components/Buttons/GenericButton.jsx";
 
 export default function Home() {
     return (
         <div className="App">
             <Headline
                 split
+                color="--research-accent-1"
                 mobileTop="3em"
                 title={
                     <>
@@ -374,14 +376,11 @@ export default function Home() {
                         <h3>Adv. Strategic UX Research Video Series</h3>
                         <p className="purchase-box-price">$277</p>
                     </div>
-                    <button className="btn-shadow btn purchase-box-button">
-                        <a
-                            className="purchase-box-button-white"
-                            href="https://essentials.centercentre.com/research"
-                        >
-                            PURCHASE VIDEO SERIES
-                        </a>
-                    </button>
+                    <GenericButton
+                        text="PURCHASE VIDEO SERIES"
+                        externalLink="https://essentials.centercentre.com/research"
+                        btnClass="purchase-box-button"
+                    />
                 </div>
             </Section>
         </div>

@@ -17,7 +17,10 @@ export default function CohortSchedule({ cohortIndex }) {
 
     return (
         <div id="CohortASchedule">
-            <Headline title={<h1>{month} Schedule</h1>} />
+            <Headline
+                title={<h1>{month} Schedule</h1>}
+                color="--research-accent-1"
+            />
 
             <section className="inner-column">
                 <div>
