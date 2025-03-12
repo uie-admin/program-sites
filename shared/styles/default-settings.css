@@ -25,6 +25,9 @@
     --content-max-width: 60rem;
     --column-padding: 0em;
 
+    --fixed-scroll-padding-top: 4rem;
+    --fixed-scroll-padding-bottom: 0rem;
+
     /* Spacing */
     --text-padding: 1em;
 }

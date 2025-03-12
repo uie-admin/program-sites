@@ -41,10 +41,7 @@ export default function Header({ title, logoImage, altText }) {
                     <PageFilter pathname={"/"}>
                         <DesktopOnly>
                             <PageSticky
-                                topBoundingElement={".hero"}
                                 bottomBoundingElement={".HomeContent"}
-                                paddingTop={40}
-                                paddingBottom={40}
                             >
                                 <VerticalCohortSelector
                                     logoImage={logoImage}
