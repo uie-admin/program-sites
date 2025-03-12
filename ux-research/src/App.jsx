@@ -36,7 +36,7 @@ function App() {
         <Router>
             <CohortContext.Provider value={cohorts}>
                 <Header
-                    text="Advanced Strategic UX Research"
+                    title="Advanced Strategic UX Research"
                     logoImage="UxResearchLogo"
                     altText="Advanced Strategic UX Research"
                 />

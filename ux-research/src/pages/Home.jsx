@@ -377,7 +377,7 @@ export default function Home() {
                         <p className="purchase-box-price">$277</p>
                     </div>
                     <Button
-                        externalLink="https://essentials.centercentre.com/research"
+                        href="https://essentials.centercentre.com/research"
                         className="purchase-box-button"
                     >
                         PURCHASE VIDEO SERIES

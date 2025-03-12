@@ -2,6 +2,7 @@
     --accent-1: hsla(183, 95%, 21%, 1);
     --accent-1-overlay: hsla(183, 95%, 21%, 0.9);
     --accent-2: hsla(327, 84%, 33%, 1);
+    --accent-cta: var(--accent-1);
 }
 
 .goals {

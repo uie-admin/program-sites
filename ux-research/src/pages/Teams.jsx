@@ -188,8 +188,8 @@ export default function Teams() {
                 <div className="call-jared">
                     <h3 className="no-margin">Talk to Jared Over a Call</h3>
                     <Button
-                        externalLink="https://jmspool-mentoring.youcanbook.me/"
-                        className="schedule-button green-team-button"
+                        href="https://jmspool-mentoring.youcanbook.me/"
+                        className="schedule-button call-jared-btn"
                     >
                         Contact Us and Talk to Jared
                     </Button>

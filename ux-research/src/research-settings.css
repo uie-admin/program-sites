@@ -13,6 +13,7 @@
     --accent-1: hsla(320, 47%, 27%, 1);
     --accent-1-overlay: hsla(320, 47%, 27%, 0.9);
     --accent-2: #ec621d;
+    --accent-cta: var(--accent-2);
 
     /* Font */
     --font-bold: 600;

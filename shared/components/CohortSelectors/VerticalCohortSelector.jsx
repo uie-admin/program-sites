@@ -60,7 +60,7 @@ export function VerticalCohort({ eventDates, scheduleLink, cohortLink }) {
                 <Link to={scheduleLink}>See Schedule</Link>
             </div>
             <Button
-                cohortLink={cohortLink}
+                href={cohortLink}
                 className="join-cohort"
             >
                 Join Us

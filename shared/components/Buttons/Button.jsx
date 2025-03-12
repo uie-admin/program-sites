@@ -1,17 +1,18 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-export default function GenericButton({
-    cohortLink,
+export default function Button({
+    href,
     children,
     className,
-    externalLink,
 }) {
+    const isLinkExternal = href.includes("http");
+
     return (
         <button className={`${className} btn-shadow`}>
-            {externalLink ? (
+            {isLinkExternal ? (
                 <a
-                    href={externalLink}
+                    href={href}
                     className="cohortSelector-button-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -19,7 +20,7 @@ export default function GenericButton({
                     {children}
                 </a>
             ) : (
-                <Link to={cohortLink} className="cohortSelector-button-link">
+                <Link to={href} className="cohortSelector-button-link">
                     {children}
                 </Link>
             )}

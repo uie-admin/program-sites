@@ -14,7 +14,7 @@
     --accent-1-overlay: hsla(320, 47%, 27%, 0.9);
     --accent-2: #ec621d;
 
-    --call-jared: hsl(183, 98%, 20%);
+    --accent-contact: hsl(183, 98%, 20%);
 
     /* Font */
     --font-bold: 600;
@@ -39,7 +39,7 @@
     }
 }
 
-@media and (max-width: 500px) {
+@media (max-width: 500px) {
     :root {
         --column-padding: ;
     }

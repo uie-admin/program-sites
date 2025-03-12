@@ -13,6 +13,7 @@ import PageSticky from "../../../shared/components/Utility/PageSticky.jsx";
 import Sticky from "../../../shared/components/Utility/Sticky.jsx";
 import Placeholder from "../../../shared/components/Utility/Placeholder.jsx";
 import DesktopOnly from "../../../shared/components/Utility/DesktopOnly.jsx";
+import Button from "../../../shared/components/Buttons/Button.jsx";
 
 export default function Home() {
     return (
@@ -389,14 +390,10 @@ export default function Home() {
                         <h3>Outcome Driven UX Metrics Video Series</h3>
                         <p className="purchase-box-price">$277</p>
                     </div>
-                    <button className="btn-shadow btn purchase-box-button">
-                        <a
-                            className="purchase-box-button-white"
-                            href="https://essentials.centercentre.com/metrics"
-                        >
-                            PURCHASE VIDEO SERIES
-                        </a>
-                    </button>
+                    <Button className="btn-shadow btn purchase-box-button"
+                        href="https://essentials.centercentre.com/metrics">
+                        PURCHASE VIDEO SERIES
+                    </Button>
                 </div>
             </Section>
         </div>
