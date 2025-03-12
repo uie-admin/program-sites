@@ -50,7 +50,7 @@
     height: auto;
 }
 
-.hero-paragraphs {
+.hero-paragraphs * {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +59,10 @@
 
 .hero-paragraphs p {
     margin: 0.25em;
-    font-size: 20px;
+}
+
+.hero-paragraphs ul {
+    margin-top: 2em;
 }
 
 /* Styles for the main heading and subtitle */
@@ -69,7 +72,7 @@ h1 {
 }
 
 .online-course {
-    font-size: 1.2em;
+    font-size: 2em;
     margin-top: 0;
 }
 
@@ -97,8 +100,11 @@ h1 {
     }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 530px) {
     .hero .jared {
         display: none;
+    }
+    .hero-paragraphs * {
+        font-size: var(--mobile-small-voice);
     }
 }

@@ -1,16 +1,23 @@
+:root {
+    --calm-voice: 1.25rem; /* 20px */
+    --headline-voice: 1.5rem; /* 24px */
+    --mobile-small-voice: 1.25rem; /* 20px */
+    --loud-voice: 1.875rem; /* 30px */
+    --attention-voice: 3.75rem; /* 60px */
+}
 body {
-    /* width: 80%;
-  border: 1px solid red;
-  margin: 0 auto; */
     font-family: "Open Sans", sans-serif;
 }
 
 /* UNIVERSAL1.3em for p */
-* p {
+* p,
+li,
+span {
     line-height: 1.5em;
     max-width: 70ch;
     margin: 0;
     color: var(--ink);
+    font-size: var(--calm-voice);
 }
 
 * span {
@@ -18,7 +25,7 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: var(--attention-voice);
     font-weight: 700;
 }
 
@@ -84,6 +91,11 @@ em {
 /*!MOBILE STYLES */
 
 @media only screen and (max-width: 768px) {
+    :root {
+        --mobile-small-voice: 1rem; /* 16px */
+        --attention-voice: 2.2rem; /* 35px */
+    }
+
     .calendar-container {
         width: 85%;
     }

@@ -178,8 +178,8 @@ export default function Home() {
 
             <Section
                 name="testimonials-container"
-                color="--accent-1-overlay"
-                bg="pixel-texture.jpg"
+                color="--accent-2-overlay"
+                bg="square-background.png"
             >
                 <Testimonial icon="star.png" author="T.H., Design Consultant:">
                     <p>

@@ -12,7 +12,7 @@ export default function Header({ title, logoImage, altText }) {
     return (
         <>
             <Navigation />
-            <Section name="header-background" bg="square-background.png">
+            <Section name="header-background" bg="dotted-background.png">
                 <h1>{title}</h1>
                 <p className="online-course strong">
                     An Online Course with Jared Spool
@@ -31,10 +31,10 @@ export default function Header({ title, logoImage, altText }) {
                         />
                         <div className="hero-paragraphs">
                             <h2>Small Group Coaching</h2>
-                            <p className="semi-strong">
-                                8 Hours Live with Jared Spool <br />8 Hours of
-                                Recorded Content
-                            </p>
+                            <ul className="semi-strong">
+                                <li>8 Hours Live with Jared Spool</li>
+                                <li>8 Hours of Recorded Content</li>
+                            </ul>
                         </div>
                     </div>
 

@@ -16,9 +16,7 @@
 }
 
 .article-content p,
-li,
-h2,
-h1 {
+li {
     max-width: 74ch;
     line-height: 1.5em;
 }

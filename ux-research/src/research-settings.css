@@ -12,7 +12,8 @@
 
     --accent-1: hsla(320, 47%, 27%, 1);
     --accent-1-overlay: hsla(320, 47%, 27%, 0.9);
-    --accent-2: #ec621d;
+    --accent-2: hsla(20, 84%, 52%, 1);
+    --accent-2-overlay: hsla(20, 84%, 52%, 0.9);
     --accent-cta: var(--accent-2);
 
     /* Font */
