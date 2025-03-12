@@ -40,9 +40,7 @@ export default function Header({ title, logoImage, altText }) {
 
                     <PageFilter pathname={"/"}>
                         <DesktopOnly>
-                            <PageSticky
-                                bottomBoundingElement={".HomeContent"}
-                            >
+                            <PageSticky bottomBoundingElement={".HomeContent"}>
                                 <VerticalCohortSelector
                                     logoImage={logoImage}
                                     altText={altText}
@@ -102,9 +100,9 @@ function Navigation() {
                             className="hamburger-image"
                         />
                     </div>
-                    <ul className={`header-links ${menuOpen ? "open" : ""}`}>
+                    <div className={`header-links ${menuOpen ? "open" : ""}`}>
                         {navLinks.map((link, index) => (
-                            <li key={index}>
+                            <div key={index}>
                                 <Link
                                     key={index}
                                     to={link.url}
@@ -112,9 +110,9 @@ function Navigation() {
                                 >
                                     {link.name}
                                 </Link>
-                            </li>
+                            </div>
                         ))}
-                    </ul>
+                    </div>
                 </nav>
             </div>
         </div>

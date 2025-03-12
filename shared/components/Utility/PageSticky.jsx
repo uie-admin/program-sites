@@ -12,7 +12,8 @@ export default function PageSticky({ children, bottomBoundingElement }) {
     useEffect(() => {
         const bottomElement = document.querySelector(bottomBoundingElement);
         const selfElement = document.querySelector(".page-sticky");
-        const placeholderElement = document.querySelector(".placeholder").childNodes[0];
+        const placeholderElement =
+            document.querySelector(".placeholder").childNodes[0];
 
         const manageResize = () => {
             const scroll = window.scrollY;
@@ -37,18 +38,24 @@ export default function PageSticky({ children, bottomBoundingElement }) {
 
     return (
         <>
-            <Placeholder>
-                {children}
-            </Placeholder>
+            <Placeholder>{children}</Placeholder>
             {createPortal(
-                (<div className="page-sticky-container" style={{ display: "block", position: "absolute", top: `calc(${positionY}px - var(--fixed-scroll-padding-top))`, left: `${positionX}px`, right: "0", height: `${containerHeight}px`, width: `${containerWidth}px` }}>
-                    <Sticky className={'page-sticky'}>
-                        {children}
-                    </Sticky>
-                </div>),
+                <div
+                    className="page-sticky-container"
+                    style={{
+                        display: "block",
+                        position: "absolute",
+                        top: `calc(${positionY}px - var(--fixed-scroll-padding-top))`,
+                        left: `${positionX}px`,
+                        right: "0",
+                        height: `${containerHeight}px`,
+                        width: `${containerWidth}px`,
+                    }}
+                >
+                    <Sticky className={"page-sticky"}>{children}</Sticky>
+                </div>,
                 document.querySelector("body")
             )}
-
         </>
     );
 }
