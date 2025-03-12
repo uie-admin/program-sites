@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { CohortContext } from "../CalendarV2/CalendarDataV2";
-import GenericButton from "../Buttons/GenericButton";
+import Button from "../Buttons/Button";
 
 export default function HorizontalCohortSelector() {
     // State and hooks to change the h1 on resize
@@ -37,9 +37,8 @@ export default function HorizontalCohortSelector() {
                             >
                                 <HorizontalCohort
                                     eventDates={cohort}
-                                    scheduleLink={`/Cohort${
-                                        index + 1
-                                    }-Schedule`}
+                                    scheduleLink={`/Cohort${index + 1
+                                        }-Schedule`}
                                     cohortLink={`/Cohort${index + 1}`}
                                 />
                             </div>
@@ -72,11 +71,12 @@ export function HorizontalCohort({ eventDates, scheduleLink, cohortLink }) {
                 )}
                 <Link to={scheduleLink}>See Schedule</Link>
             </div>
-            <GenericButton
+            <Button
                 cohortLink={cohortLink}
-                btnClass="join-cohort"
-                text="Join Us"
-            />
+                className="join-cohort"
+            >
+                Join Us
+            </Button>
         </div>
     );
 }

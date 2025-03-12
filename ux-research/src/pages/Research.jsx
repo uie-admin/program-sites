@@ -31,7 +31,7 @@ export default function Research() {
             <Headline
                 title={<h1> Why UX Research?</h1>}
                 split
-                color="--research-accent-1"
+                color="--accent-1"
             >
                 <DesktopOnly>
                     <PageSticky

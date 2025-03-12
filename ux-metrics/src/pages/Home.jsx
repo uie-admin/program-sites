@@ -19,7 +19,7 @@ export default function Home() {
         <div className="App">
             <Headline
                 split
-                color="--metrics-accent-1"
+                color="--accent-1"
                 mobileTop="3em"
                 title={
                     <>
@@ -140,7 +140,7 @@ export default function Home() {
                         <li>
                             <em>Problem-value metrics:</em> Pinpoint and
                             aggregate your organization’s ongoing costs of poor
-                            UX to promote UX’s return on investment. 
+                            UX to promote UX’s return on investment.
                         </li>
                     </ul>
                     <p>
@@ -151,7 +151,7 @@ export default function Home() {
                     <p>
                         Outcome-driven UX Metrics are simple in their concepts.
                         Once you acquire the fundamentals, you’re ready to
-                        implement your own. 
+                        implement your own.
                     </p>
                     <p>
                         And once you implement your own Outcome-Driven UX
@@ -177,7 +177,7 @@ export default function Home() {
 
             <Section
                 name="testimonials-container"
-                color="--metrics-accent-1-overlay"
+                color="--accent-1-overlay"
                 bg="pixel-texture.jpg"
             >
                 <Testimonial icon="star.png" author="T.H., Design Consultant:">

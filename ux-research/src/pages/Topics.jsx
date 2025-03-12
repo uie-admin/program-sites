@@ -15,7 +15,7 @@ export default function Topics() {
             <Headline
                 title={<h1> Course Topics</h1>}
                 split
-                color="--research-accent-1"
+                color="--accent-1"
             >
                 <DesktopOnly>
                     <PageSticky

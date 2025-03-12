@@ -7,7 +7,7 @@ import Float from "../../../shared/components/Utility/Float";
 import Placeholder from "../../../shared/components/Utility/Placeholder";
 import DesktopOnly from "../../../shared/components/Utility/DesktopOnly";
 import MobileOnly from "../../../shared/components/Utility/MobileOnly";
-import GenericButton from "../../../shared/components/Buttons/GenericButton";
+import Button from "../../../shared/components/Buttons/Button";
 
 function TeamsTestimonial() {
     return (
@@ -40,7 +40,7 @@ export default function Teams() {
             <Headline
                 title={<h1> Sign Up Your Team</h1>}
                 split
-                color="--research-accent-1"
+                color="--accent-1"
             >
                 <DesktopOnly>
                     <Float>
@@ -187,19 +187,12 @@ export default function Teams() {
                 </div>
                 <div className="call-jared">
                     <h3 className="no-margin">Talk to Jared Over a Call</h3>
-                    <GenericButton
-                        text="Contact Us and Talk to Jared"
+                    <Button
                         externalLink="https://jmspool-mentoring.youcanbook.me/"
-                        btnClass="schedule-button"
-                    />
-                    {/* <button className=" btn btn-shadow green-team-button">
-                        <a
-                            className="purchase-box-button-white"
-                            href="https://jmspool-mentoring.youcanbook.me/"
-                        >
-                            Contact Us and Talk to Jared
-                        </a>
-                    </button> */}
+                        className="schedule-button green-team-button"
+                    >
+                        Contact Us and Talk to Jared
+                    </Button>
                 </div>
             </Section>
         </div>

@@ -14,7 +14,7 @@ export default function Topics() {
         <div className="topics">
             <Headline
                 title={<h1> Course Topics</h1>}
-                color="--metrics-accent-1"
+                color="--accent-1"
                 split
             >
                 <DesktopOnly>

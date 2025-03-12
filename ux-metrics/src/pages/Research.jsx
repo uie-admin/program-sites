@@ -17,7 +17,7 @@ export default function Research() {
         <div className="outcomes">
             <Headline
                 title={<h1> Why UX Research?</h1>}
-                color="--metrics-accent-1"
+                color="--accent-1"
                 split
             >
                 <DesktopOnly>
