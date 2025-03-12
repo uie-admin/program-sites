@@ -19,10 +19,7 @@ export default function Topics() {
             >
                 <DesktopOnly>
                     <PageSticky
-                        topBoundingElement={".headline"}
                         bottomBoundingElement={".courseTopics-intro"}
-                        paddingTop={40}
-                        paddingBottom={40}
                     >
                         <VerticalCohortSelector
                             logoImage="UxResearchLogo"

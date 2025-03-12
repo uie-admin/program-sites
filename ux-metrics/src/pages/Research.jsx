@@ -22,10 +22,7 @@ export default function Research() {
             >
                 <DesktopOnly>
                     <PageSticky
-                        topBoundingElement={".headline"}
                         bottomBoundingElement={".research-content"}
-                        paddingTop={40}
-                        paddingBottom={20}
                     >
                         <VerticalCohortSelector
                             logoImage="UxMetricsLogo"
