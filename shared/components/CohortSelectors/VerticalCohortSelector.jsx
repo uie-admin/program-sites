@@ -59,11 +59,8 @@ export function VerticalCohort({ eventDates, scheduleLink, cohortLink }) {
                 )}
                 <Link to={scheduleLink}>See Schedule</Link>
             </div>
-            <Button
-                href={cohortLink}
-                className="join-cohort"
-            >
-                Join Us
+            <Button href={cohortLink} className="join-cohort">
+                Join Cohort
             </Button>
         </div>
     );

@@ -26,7 +26,7 @@ span {
 
 h1 {
     font-size: var(--attention-voice);
-    font-weight: 700;
+    font-weight: 800;
 }
 
 h2 {
@@ -46,6 +46,10 @@ h3 + button {
 }
 
 p + p {
+    margin-top: 1em;
+}
+
+li + li {
     margin-top: 1em;
 }
 

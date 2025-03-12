@@ -46,7 +46,9 @@ export default function Home() {
 
             <Section name="HomeContent" split>
                 <div>
-                    <h2>Strategic UX Research is the Next Big Thing.</h2>
+                    <h2>
+                        Advanced Strategic UX Research is the Next Big Thing.
+                    </h2>
                     <p>
                         Get ready to connect your organization’s long-term
                         direction and strategy directly to your customers’ and
@@ -126,7 +128,7 @@ export default function Home() {
                     <h3>
                         Discover the basic principles of Strategic UX Research:
                     </h3>
-                    <ul>
+                    <ul className="styled-list">
                         <li>
                             Build deep expertise about users and their needs.
                         </li>
@@ -239,7 +241,7 @@ export default function Home() {
                 </Sticky>
             </Section>
 
-            <CalendarV2 cohortID="1" />
+            <CalendarV2 cohortIndex="1" />
 
             <HorizontalCohortSelector />
 
@@ -361,7 +363,7 @@ export default function Home() {
                             parts in our UX Strategy Essentials Library.
                         </p>
                         <h3>What’s included for $227:</h3>
-                        <ul>
+                        <ul className="styled-list">
                             <li>
                                 The lectures and notes from all eight topics.
                             </li>
@@ -380,7 +382,7 @@ export default function Home() {
                         href="https://essentials.centercentre.com/research"
                         className="purchase-box-button"
                     >
-                        PURCHASE VIDEO SERIES
+                        {"Purchase the Video Series".toUpperCase()}
                     </Button>
                 </div>
             </Section>

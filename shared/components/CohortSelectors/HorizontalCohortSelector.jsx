@@ -37,8 +37,9 @@ export default function HorizontalCohortSelector() {
                             >
                                 <HorizontalCohort
                                     eventDates={cohort}
-                                    scheduleLink={`/Cohort${index + 1
-                                        }-Schedule`}
+                                    scheduleLink={`/Cohort${
+                                        index + 1
+                                    }-Schedule`}
                                     cohortLink={`/Cohort${index + 1}`}
                                 />
                             </div>
@@ -71,11 +72,8 @@ export function HorizontalCohort({ eventDates, scheduleLink, cohortLink }) {
                 )}
                 <Link to={scheduleLink}>See Schedule</Link>
             </div>
-            <Button
-                href={cohortLink}
-                className="join-cohort"
-            >
-                Join Us
+            <Button href={cohortLink} className="join-cohort">
+                Join Cohort
             </Button>
         </div>
     );

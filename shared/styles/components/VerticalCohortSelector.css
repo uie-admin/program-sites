@@ -27,14 +27,13 @@
     max-width: var(--section-width);
 }
 
-.horizontal-cohort-paragraphs>p {
+.horizontal-cohort-paragraphs > p {
     margin: 0;
 }
 
 .vertical-cohort-1 {
     display: flex;
     align-items: center;
-    padding-block: 0.75em;
     justify-content: space-between;
     width: 100%;
 }

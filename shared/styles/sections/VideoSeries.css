@@ -7,7 +7,7 @@
 }
 
 .purchase-box {
-    width: 40%;
+    width: 35%;
 
     img {
         max-width: 100%;
@@ -26,6 +26,12 @@
     /* border: 1px solid red; */
     font-weight: bold;
     margin-top: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .purchase-box {
+        min-width: 225px;
+    }
 }
 
 @media only screen and (max-width: 768px) {

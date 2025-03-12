@@ -10,7 +10,9 @@
 }
 
 .courseSchedule-container {
-    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .courseSchedule-container h1 {
     font-size: 2rem;
@@ -25,8 +27,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 10px;
-    margin-top: 0.5em;
+    gap: 15px;
 }
 
 .timezone-container p {
@@ -40,7 +41,6 @@ select {
     text-align: center;
     background-color: rgb(235, 235, 235);
     border-radius: 10px;
-    height: 2.2rem;
     font-weight: 700;
     width: fit-content;
 }
