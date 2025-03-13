@@ -122,25 +122,38 @@ export default function Teams() {
                         care of moving your team.
                     </p>
                 </div>
-                <div>
-                    <img
-                        src="/images/public-teams.png"
-                        alt="Jared"
-                        className="left-content-image"
-                    />
-                </div>
+                <DesktopOnly>
+                    <div>
+                        <img
+                            src="/images/public-teams.png"
+                            alt="Jared"
+                            className="left-content-image"
+                        />
+                    </div>
+                </DesktopOnly>
             </Section>
 
             <HorizontalCohortSelector />
 
             <Section split>
-                <div>
-                    <img
-                        src="/images/private-workshop-big-icon.png"
-                        alt="Jared"
-                        className="left-content-image"
-                    />
-                </div>
+                <DesktopOnly>
+                    <div>
+                        <img
+                            src="/images/private-workshop-big-icon.png"
+                            alt="Jared"
+                            className="left-content-image"
+                        />
+                    </div>
+                </DesktopOnly>
+                <MobileOnly>
+                    <div>
+                        <img
+                            src="/images/private-teams.png"
+                            alt="Jared"
+                            className="left-content-image"
+                        />
+                    </div>
+                </MobileOnly>
                 <div>
                     <h3>
                         For More than 8 Team Members: Plan a Private Workshop

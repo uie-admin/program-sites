@@ -111,7 +111,6 @@ const fetchCohort = async (cohortID) => {
         Authorization: `Bearer ${cohortTables["KEY"]}`,
     };
 
-
     try {
         const response = await axios.get(url, { headers });
         const res = response.data.records.map((record) => ({

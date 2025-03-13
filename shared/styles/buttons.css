@@ -5,14 +5,20 @@
     border-radius: 6px;
     font-weight: 700;
     width: 120px;
-
     background-color: var(--accent-2);
 }
 
+.horizontal-color {
+    background-color: var(--accent-1);
+}
+
+.check-cohort-btn {
+    background-color: var(--accent-1);
+}
+
 .schedule-button {
-    background-color: var(--call-jared);
     color: var(--btn-ink);
-    min-width: 300px;
+    min-width: 250px;
     padding: 10px 25px;
     border: 2px solid black;
     border-radius: 6px;

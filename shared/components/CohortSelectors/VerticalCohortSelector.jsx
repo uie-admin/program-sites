@@ -37,9 +37,10 @@ export default function VerticalCohortSelector({ logoImage, altText }) {
                     </div>
                 )}
             </div>
-            <span className="mt-2">8 or more team members?</span>
-            <br />
-            <Link to="/teams">Explore private team courses</Link>
+            <div className="cohort-cta">
+                <p>8 or more team members?</p>
+                <Link to="/teams">Explore private team courses</Link>
+            </div>
         </div>
     );
 }
