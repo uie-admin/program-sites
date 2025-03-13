@@ -72,7 +72,7 @@ export function HorizontalCohort({ eventDates, scheduleLink, cohortLink }) {
                 )}
                 <Link to={scheduleLink}>See Schedule</Link>
             </div>
-            <Button href={cohortLink} className="join-cohort">
+            <Button href={cohortLink} className="join-cohort horizontal-color">
                 Join Cohort
             </Button>
         </div>

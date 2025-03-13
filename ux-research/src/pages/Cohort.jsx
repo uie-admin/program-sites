@@ -6,6 +6,7 @@ import Headline from "../../../shared/components/Content/Headline";
 import SpiffyCheckout from "../../../shared/components/Integrations/SpiffyCheckout";
 import Section from "../../../shared/components/Layout/Section";
 import { CohortContext } from "../../../shared/components/CalendarV2/CalendarDataV2";
+import Button from "../../../shared/components/Buttons/Button";
 
 export default function Cohort({ cohortIndex }) {
     const [loadingTime, setLoadingTime] = useState(true);
@@ -98,14 +99,12 @@ export default function Cohort({ cohortIndex }) {
                         src="./images/UxResearchLogo.png"
                         alt="Advanced Strategic UX Research"
                     />
-                    <button className="btn btn-shadow schedule-button inner-column-purchase button cohortSelector-button-link">
-                        <Link
-                            to={"/Cohort" + cohortIndex + "-schedule"}
-                            className="cohortSelector-button-link"
-                        >
-                            {month} Schedule
-                        </Link>
-                    </button>
+                    <Button
+                        href={"/Cohort" + cohortIndex + "0schedule"}
+                        className="schedule-button check-cohort-btn"
+                    >
+                        {month} Schedule
+                    </Button>
                 </div>
             </Section>
             <Section split>
