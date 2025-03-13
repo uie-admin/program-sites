@@ -1,12 +1,12 @@
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import { CohortContext } from "../CalendarV2/CalendarDataV2";
+import { CohortContext, UpcomingCohortContext } from "../CalendarV2/CalendarDataV2";
 import Button from "../Buttons/Button";
 
 export default function HorizontalCohortSelector() {
     // State and hooks to change the h1 on resize
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-    const cohorts = useContext(CohortContext);
+    const cohorts = useContext(UpcomingCohortContext);
 
     // Update the state on window resize
     useEffect(() => {
@@ -29,26 +29,25 @@ export default function HorizontalCohortSelector() {
                     </b>
                 </span>
                 <div className="cohort-1-container">
-                    {cohorts ? (
-                        cohorts.map((cohort, index) => (
+                    {cohorts && cohorts[0] ? (
+                        cohorts.map((cohort) => (
                             <div
                                 className="cohort-choice"
-                                key={"cohort-choice" + index}
+                                key={"cohort-choice" + cohort[0].cohortNumber}
                             >
                                 <HorizontalCohort
                                     eventDates={cohort}
-                                    scheduleLink={`/Cohort${
-                                        index + 1
-                                    }-Schedule`}
-                                    cohortLink={`/Cohort${index + 1}`}
+                                    scheduleLink={`/Cohort${cohort[0].cohortNumber
+                                        }-Schedule`}
+                                    cohortLink={`/Cohort${cohort[0].cohortNumber}`}
                                 />
                             </div>
                         ))
                     ) : (
                         <div className="cohort-choice" key={"cohort-choice"}>
                             <HorizontalCohort
-                                scheduleLink={`/Cohort${1}-Schedule`}
-                                cohortLink={`/Cohort${1}`}
+                                scheduleLink={`/Cohort-Schedule`}
+                                cohortLink={`/Cohort`}
                             />
                         </div>
                     )}

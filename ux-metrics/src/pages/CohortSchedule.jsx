@@ -5,20 +5,13 @@ import Headline from "../../../shared/components/Content/Headline";
 import { useState, useEffect, useContext } from "react";
 import { CohortContext } from "../../../shared/components/CalendarV2/CalendarDataV2";
 
-export default function CohortSchedule({ cohortIndex }) {
+export default function CohortSchedule({ cohortIndex, cohortName }) {
     const cohorts = useContext(CohortContext);
-    const [month, setMonth] = useState(null);
-
-    if (!month && cohorts && cohorts[cohortIndex - 1]) {
-        const startDate = new Date(cohorts[cohortIndex - 1][0].watchStart1);
-        const month = startDate.toLocaleString("default", { month: "long" });
-        setMonth(month);
-    }
 
     return (
         <div id="CohortASchedule">
             <Headline
-                title={<h1>{month} Schedule</h1>}
+                title={<h1>{cohortName} Schedule</h1>}
                 color="--accent-1"
             />
 

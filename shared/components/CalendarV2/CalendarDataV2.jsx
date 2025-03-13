@@ -53,6 +53,7 @@ import { createContext } from "react";
 
 const HOURS_BEFORE_CUTOFF = 2;
 export const CohortContext = createContext(null);
+export const UpcomingCohortContext = createContext(null);
 
 const cohortTables = {
     KEY: import.meta.env.VITE_AIRTABLE_API_KEY,
@@ -67,25 +68,42 @@ export const fetchCohorts = async () => {
             return fetchCohort(cohortID);
         })
     );
-    const now = new Date();
 
+    // Ensure week objects are in order
     let upcomingCohorts = cohortDatas.map((cohort) => {
-        return cohort.sort((a, b) => a.week - b.week);
+        return cohort.sort((a, b) => new Date(a.start) - new Date(b.start));
     });
 
-    /* filter out cohorts that have started already by subtracting 2 hours from the start time. If the calculated time is greater than now, keep the cohort. */
-    upcomingCohorts = upcomingCohorts.filter((cohortData) => {
-        const cutoffDate = new Date(cohortData[0].watchStart1);
-        cutoffDate.setHours(cutoffDate.getHours() - HOURS_BEFORE_CUTOFF);
-        return cutoffDate > now;
-    });
-
+    // Sort by start date
     upcomingCohorts = upcomingCohorts.sort(
         (a, b) => new Date(a[0].watchStart1) > new Date(b[0].watchStart1)
     );
 
     return upcomingCohorts;
 };
+
+export const filterUpcomingCohorts = (cohorts) => {
+    if (!cohorts) return [];
+    const now = new Date();
+
+    /* filter out cohorts that have started already by subtracting 2 hours from the start time. If the calculated time is greater than now, keep the cohort. */
+    let upcomingCohorts = cohorts.filter((cohortData) => {
+        const cutoffDate = new Date(cohortData[0].watchStart1);
+        cutoffDate.setHours(cutoffDate.getHours() - HOURS_BEFORE_CUTOFF);
+        return cutoffDate > now;
+    });
+
+    // Add original cohort number to each week object
+    upcomingCohorts = upcomingCohorts.map((cohort) => {
+        return cohort.map((week) => {
+            return {
+                ...week, cohortNumber: cohorts.indexOf(cohort) + 1,
+            };
+        });
+    });
+
+    return upcomingCohorts;
+}
 
 const fetchCohort = async (cohortID) => {
     const url = `https://api.airtable.com/v0/${cohortTables["ID"]}/${cohortID}`;

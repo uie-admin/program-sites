@@ -5,20 +5,17 @@ import Headline from "../../../shared/components/Content/Headline";
 // components
 import SpiffyCheckout from "../../../shared/components/Integrations/SpiffyCheckout";
 import Section from "../../../shared/components/Layout/Section";
-import { CohortContext } from "../../../shared/components/CalendarV2/CalendarDataV2";
+import { CohortContext, UpcomingCohortContext } from "../../../shared/components/CalendarV2/CalendarDataV2";
 
-export default function Cohort({ cohortIndex }) {
+export default function Cohort({ cohortIndex, cohortName }) {
     const [loadingTime, setLoadingTime] = useState(true);
     const [loadingText, setLoadingText] = useState("Loading Checkout...");
     const checkoutRef = useRef(null);
 
     const cohorts = useContext(CohortContext);
-    const [month, setMonth] = useState(null);
-
-    if (!month && cohorts && cohorts[cohortIndex - 1]) {
-        const startDate = new Date(cohorts[cohortIndex - 1][0].watchStart1);
-        const month = startDate.toLocaleString("default", { month: "long" });
-        setMonth(month);
+    const upcomingCohorts = useContext(UpcomingCohortContext);
+    if (!cohortIndex && upcomingCohorts) {
+        cohortIndex = upcomingCohorts[0][0].cohortNumber;
     }
 
     useEffect(() => {
@@ -58,7 +55,7 @@ export default function Cohort({ cohortIndex }) {
     return (
         <div id="Cohort">
             <Headline
-                title={<h1>Join the {month} Cohort</h1>}
+                title={<h1>Join the {cohortName} Cohort</h1>}
                 color="--accent-1"
             />
 
@@ -103,7 +100,7 @@ export default function Cohort({ cohortIndex }) {
                             to={"/Cohort" + cohortIndex + "-schedule"}
                             className="cohortSelector-button-link"
                         >
-                            {month} Schedule
+                            {cohortName} Schedule
                         </Link>
                     </button>
                 </div>
@@ -164,7 +161,7 @@ export default function Cohort({ cohortIndex }) {
 
             <div ref={checkoutRef}>
                 <SpiffyCheckout>
-                    <h2>Join the {month} UX Research Cohort</h2>
+                    <h2>Join the {cohortName} UX Research Cohort</h2>
                     {loadingTime && (
                         <a onClick={handleRefresh}>{loadingText}</a>
                     )}

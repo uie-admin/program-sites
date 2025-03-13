@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { CohortContext } from "../CalendarV2/CalendarDataV2";
+import { CohortContext, UpcomingCohortContext } from "../CalendarV2/CalendarDataV2";
 import Button from "../Buttons/Button";
 
 export default function VerticalCohortSelector({ logoImage, altText }) {
-    const cohorts = useContext(CohortContext);
+    const cohorts = useContext(UpcomingCohortContext);
 
     return (
         <div className="verticalCohortSelector">
@@ -15,24 +15,24 @@ export default function VerticalCohortSelector({ logoImage, altText }) {
             />
             <span>Next Cohorts:</span>
             <div>
-                {cohorts ? (
+                {cohorts && cohorts[0] ? (
                     cohorts.map((cohort, index) => (
                         <div
                             className="cohort-choice"
-                            key={"cohort-choice" + index}
+                            key={"cohort-choice" + cohort[0].cohortNumber}
                         >
                             <VerticalCohort
                                 eventDates={cohort}
-                                scheduleLink={`/Cohort${index + 1}-Schedule`}
-                                cohortLink={`/Cohort${index + 1}`}
+                                scheduleLink={`/Cohort${cohort[0].cohortNumber}-Schedule`}
+                                cohortLink={`/Cohort${cohort[0].cohortNumber}`}
                             />
                         </div>
                     ))
                 ) : (
                     <div className="cohort-choice" key={"cohort-choice"}>
                         <VerticalCohort
-                            scheduleLink={`/Cohort${1}-Schedule`}
-                            cohortLink={`/Cohort${1}`}
+                            scheduleLink={`/Cohort-Schedule`}
+                            cohortLink={`/Cohort`}
                         />
                     </div>
                 )}
