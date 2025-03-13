@@ -11,7 +11,7 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-latest
-    steps:
+    steps: 
       - name: Check out
         # You may use a newer version of https://github.com/actions/checkout
         uses: actions/checkout@v4
