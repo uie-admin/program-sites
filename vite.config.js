@@ -14,4 +14,5 @@ export default defineConfig({
         port: 3000, // Optional: Match CRA's default port
     },
     root: path.resolve(__dirname, app + "/"),
+    base: "./",
 });
