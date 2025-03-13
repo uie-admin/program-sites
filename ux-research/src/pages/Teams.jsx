@@ -125,7 +125,7 @@ export default function Teams() {
                 <DesktopOnly>
                     <div>
                         <img
-                            src="/images/public-teams.png"
+                            src="./images/public-teams.png"
                             alt="Jared"
                             className="left-content-image"
                         />
@@ -139,7 +139,7 @@ export default function Teams() {
                 <DesktopOnly>
                     <div>
                         <img
-                            src="/images/private-workshop-big-icon.png"
+                            src="./images/private-workshop-big-icon.png"
                             alt="Jared"
                             className="left-content-image"
                         />
@@ -148,7 +148,7 @@ export default function Teams() {
                 <MobileOnly>
                     <div>
                         <img
-                            src="/images/private-teams.png"
+                            src="./images/private-teams.png"
                             alt="Jared"
                             className="left-content-image"
                         />

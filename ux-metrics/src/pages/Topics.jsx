@@ -106,7 +106,7 @@ export default function Topics() {
                         </p>
                     </div>
                     <picture className="research-logo hide-on-mobile">
-                        <img src="/images/UxMetricsLogo.png" />
+                        <img src="./images/UxMetricsLogo.png" />
                     </picture>
                 </div>
             </Section>

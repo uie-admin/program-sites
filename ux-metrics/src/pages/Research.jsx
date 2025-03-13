@@ -96,7 +96,7 @@ export default function Research() {
             <Section name="goals" split>
                 <div>
                     <img
-                        src="/images/metrics-goals.png"
+                        src="./images/metrics-goals.png"
                         alt="Jared"
                         className="left-content-image"
                     />
@@ -182,7 +182,7 @@ export default function Research() {
                     </div>
                     <picture className="research-logo hide-on-mobile">
                         <img
-                            src="/images/UxMetricsLogo.png"
+                            src="./images/UxMetricsLogo.png"
                             alt="Outcome Driven UX Metrics"
                         />
                     </picture>

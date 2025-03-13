@@ -52,7 +52,7 @@ function Topic({ side, topicName, index, rich, week }) {
                 )}
                 <div>
                     <img
-                        src={`/images/topic-${calculateStep(index, side)}.png`}
+                        src={`./images/topic-${calculateStep(index, side)}.png`}
                         alt={`Topic ${calculateStep(index, side)}`}
                         className="topic-icon"
                     />

@@ -15,14 +15,11 @@ Deployed on Netlify at [ux-research.centercentre.com](https://ux-research.center
 ## How to use
 
 Start sites with:
-`npm run dev:ux-research`
-`npm run dev:ux-metrics`
+`npm run dev:research`
+`npm run dev:metrics`
 
 Build sites with
-`npm run build:ux-research`
-`npm run build:ux-metrics`
+`npm run build:research`
+`npm run build:metrics`
 `npm run build:all`
-
-(Don't forget to include a netlify.toml)
-
 

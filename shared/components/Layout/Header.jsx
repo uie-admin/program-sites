@@ -17,16 +17,16 @@ export default function Header({ title, logoImage, altText }) {
                 <p className="online-course strong">
                     An Online Course with Jared Spool
                 </p>
-                <div className="flex relative">
+                <div className="relative flex">
                     <div className="hero">
                         {/* <img
                             className="research-logo"
-                            src="/images/UxResearchLogo.png"
+                            src="/.images/UxResearchLogo.png"
                             alt="Adv. UX Research"
                         ></img> */}
                         <img
                             className="jared"
-                            src="/images/Jared_Spool 2.png"
+                            src="./images/Jared_Spool 2.png"
                             alt="Jared"
                         />
                         <div className="hero-paragraphs">
@@ -89,13 +89,13 @@ function Navigation() {
                     >
                         <img
                             className="header-logo"
-                            src="/images/Center_Centre_Logo.png"
+                            src="./images/Center_Centre_Logo.png"
                             alt="center centre logo"
                         />
                     </a>
                     <div className="hamburger" onClick={toggleMenu}>
                         <img
-                            src="/images/Menu.png"
+                            src="./images/Menu.png"
                             alt="Menu"
                             className="hamburger-image"
                         />

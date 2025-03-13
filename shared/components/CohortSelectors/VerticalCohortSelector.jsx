@@ -9,7 +9,7 @@ export default function VerticalCohortSelector({ logoImage, altText }) {
     return (
         <div className="verticalCohortSelector">
             <img
-                src={`/images/${logoImage}.png`}
+                src={`./images/${logoImage}.png`}
                 alt={altText}
                 className="cohortSelector-image"
             />

@@ -120,7 +120,7 @@ export default function Teams() {
                 </div>
                 <div>
                     <img
-                        src="/images/public-teams.png"
+                        src="./images/public-teams.png"
                         alt="Jared"
                         className="left-content-image"
                     />
@@ -132,7 +132,7 @@ export default function Teams() {
             <Section split>
                 <div>
                     <img
-                        src="/images/private-teams.png"
+                        src="./images/private-teams.png"
                         alt="Jared"
                         className="left-content-image"
                     />
