@@ -76,7 +76,7 @@ function Navigation() {
         { name: "Topics", url: "/topics" },
         { name: "Research", url: "/research" },
         { name: "Teams", url: "/teams" },
-        { name: "Join Next Cohort", url: "/Cohort1" },
+        { name: "Join Next Cohort", url: "/cohort" },
     ];
 
     return (
