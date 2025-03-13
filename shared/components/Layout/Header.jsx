@@ -21,7 +21,7 @@ export default function Header({ title, logoImage, altText }) {
                     <div className="hero">
                         {/* <img
                             className="research-logo"
-                            src="/.images/UxResearchLogo.png"
+                            src="./images/UxResearchLogo.png"
                             alt="Adv. UX Research"
                         ></img> */}
                         <img
