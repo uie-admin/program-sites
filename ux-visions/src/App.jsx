@@ -1,5 +1,5 @@
 import "../../shared/styles/site.css";
-import "./research-settings.css";
+import "./metrics-settings.css";
 
 // Router and Pages
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -21,62 +21,122 @@ import Footer from "../../shared/components/Layout/Footer";
 import {
     fetchCohorts,
     CohortContext,
+    UpcomingCohortContext,
+    filterUpcomingCohorts,
 } from "../../shared/components/CalendarV2/CalendarDataV2";
 
 const NUM_COHORTS = import.meta.env.VITE_COHORT_TABLES.split(",").length;
+const COHORT_NAMES = import.meta.env.VITE_COHORT_NAMES.split(",");
+const DEFAULT_COHORT_NAME = import.meta.env.VITE_NEXT_COHORT_NAME;
 
 function App() {
     const [cohorts, setCohorts] = useState(null);
+    const [upcomingCohorts, setUpcomingCohorts] = useState(null);
 
     useEffect(() => {
-        fetchCohorts().then(setCohorts);
+        fetchCohorts().then((fetchedCohorts) => {
+            setCohorts(fetchedCohorts);
+            setUpcomingCohorts(filterUpcomingCohorts(fetchedCohorts));
+        });
     }, []);
 
     return (
         <Router>
             <CohortContext.Provider value={cohorts}>
-                <Header
-                    title="Advanced Strategic UX Research"
-                    logoImage="UxResearchLogo"
-                    altText="Advanced Strategic UX Research"
-                />
-                <Routes>
-                    {/* Define the routes for each page */}
-                    <Route path="/" element={<Home />} />
-                    <Route path="/research" element={<Research />} />
-                    <Route path="/teams" element={<Teams />} />
-                    <Route path="/topics" element={<Topics />} />
+                <UpcomingCohortContext.Provider value={upcomingCohorts}>
+                    <Header
+                        title="UX Vision"
+                        logoImage="UxMetricsLogo"
+                        altText="UX Vision"
+                    />
+                    <Routes>
+                        {/* Define the routes for each page */}
+                        <Route path="/" element={<Home />} />
+                        <Route path="/research" element={<Research />} />
+                        <Route path="/teams" element={<Teams />} />
+                        <Route path="/topics" element={<Topics />} />
 
-                    {/* <Route key={`cohort-1`} path={`/Cohort1`} element={<Cohort cohortIndex={1} />} />
-                    <Route key={`cohort-2`} path={`/Cohort2`} element={<Cohort cohortIndex={2} />} />
-                    <Route key={`cohort-schedule-1`} path={`/Cohort1-schedule`} element={<CohortSchedule cohortIndex={1} />} />
-                    <Route key={`cohort-schedule-2`} path={`/Cohort2-schedule`} element={<CohortSchedule cohortIndex={2} />} /> */}
+                        {/* Default cohort pages show next cohort */}
+                        <Route
+                            key={`cohort`}
+                            path={`/Cohort`}
+                            element={
+                                !upcomingCohorts ? (
+                                    <Cohort
+                                        cohortIndex={null}
+                                        cohortName={DEFAULT_COHORT_NAME}
+                                    />
+                                ) : (
+                                    <Cohort
+                                        cohortIndex={
+                                            upcomingCohorts[0][0].cohortNumber
+                                        }
+                                        cohortName={
+                                            COHORT_NAMES[
+                                                upcomingCohorts[0][0]
+                                                    .cohortNumber - 1
+                                            ]
+                                        }
+                                    />
+                                )
+                            }
+                        />
+                        <Route
+                            key={`cohort-schedule`}
+                            path={`/Cohort-schedule`}
+                            element={
+                                !upcomingCohorts ? (
+                                    <CohortSchedule
+                                        cohortIndex={null}
+                                        cohortName={DEFAULT_COHORT_NAME}
+                                    />
+                                ) : (
+                                    <CohortSchedule
+                                        cohortIndex={
+                                            upcomingCohorts[0][0].cohortNumber
+                                        }
+                                        cohortName={
+                                            COHORT_NAMES[
+                                                upcomingCohorts[0][0]
+                                                    .cohortNumber - 1
+                                            ]
+                                        }
+                                    />
+                                )
+                            }
+                        />
 
-                    {Array.from({ length: NUM_COHORTS }, (_, i) => {
-                        const cohortIndex = i + 1;
-                        return (
-                            <>
-                                <Route
-                                    key={`cohort-${i}`}
-                                    path={`/Cohort${cohortIndex}`}
-                                    element={
-                                        <Cohort cohortIndex={cohortIndex} />
-                                    }
-                                />
-                                <Route
-                                    key={`cohort-schedule-${i}`}
-                                    path={`/Cohort${cohortIndex}-schedule`}
-                                    element={
-                                        <CohortSchedule
-                                            cohortIndex={cohortIndex}
-                                        />
-                                    }
-                                />
-                            </>
-                        );
-                    })}
-                </Routes>
-                <Footer />
+                        {/* Route to each cohort page, depending on the number of cohort tables in .env file */}
+                        {Array.from({ length: NUM_COHORTS }, (_, i) => {
+                            const cohortIndex = i + 1;
+                            return (
+                                <>
+                                    <Route
+                                        key={`cohort-${i}`}
+                                        path={`/Cohort${cohortIndex}`}
+                                        element={
+                                            <Cohort
+                                                cohortIndex={cohortIndex}
+                                                cohortName={COHORT_NAMES[i]}
+                                            />
+                                        }
+                                    />
+                                    <Route
+                                        key={`cohort-schedule-${i}`}
+                                        path={`/Cohort${cohortIndex}-schedule`}
+                                        element={
+                                            <CohortSchedule
+                                                cohortIndex={cohortIndex}
+                                                cohortName={COHORT_NAMES[i]}
+                                            />
+                                        }
+                                    />
+                                </>
+                            );
+                        })}
+                    </Routes>
+                    <Footer />
+                </UpcomingCohortContext.Provider>
             </CohortContext.Provider>
         </Router>
     );
