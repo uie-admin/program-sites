@@ -26,13 +26,11 @@ jobs:
           branch: "main" # The branch you chose to be your github-pages source
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Optional, if you want the apps URL commented in your PR
           apps: |
-            {
-              "research": { # SLUG, the partial URL for your app, see step 3.
-                "build": "npm run build:ux-research", # Build command
-                "dist": "./ux-research/dist" # The dist folder where your "yarn build" command will place the build artifacts
-              },
-              "metrics": {
-                "build": "npm run build:ux-metrics",
-                "dist": "./ux-research/dist"
-              }
+            "research": { # SLUG, the partial URL for your app, see step 3.
+              "build": "npm run build:ux-research", # Build command
+              "dist": "./ux-research/dist" # The dist folder where your "yarn build" command will place the build artifacts
+            },
+            "metrics": {
+              "build": "npm run build:ux-metrics",
+              "dist": "./ux-research/dist"
             }
