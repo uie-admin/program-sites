@@ -1,4 +1,4 @@
-name: Your github action
+name: Deploy preview to GitHub Pages
 
 on:
   push:
