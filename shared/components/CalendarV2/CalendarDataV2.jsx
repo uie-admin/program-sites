@@ -67,10 +67,12 @@ export const fetchCohorts = async () => {
             return fetchCohort(cohortID);
         })
     );
+    console.log("First Fetch Cohort Data", cohortDatas);
+
     const now = new Date();
 
     let upcomingCohorts = cohortDatas.map((cohort) => {
-        return cohort.sort((a, b) => a.week - b.week);
+        return cohort.sort((a, b) => new Date(a.start) - new Date(b.start));
     });
 
     /* filter out cohorts that have started already by subtracting 2 hours from the start time. If the calculated time is greater than now, keep the cohort. */
@@ -81,8 +83,10 @@ export const fetchCohorts = async () => {
     });
 
     upcomingCohorts = upcomingCohorts.sort(
-        (a, b) => new Date(a[0].watchStart1) > new Date(b[0].watchStart1)
+        (a, b) => new Date(a[0].watchStart1) - new Date(b[0].watchStart1)
     );
+
+    console.log("Filtered and Sorted Cohort Data", upcomingCohorts);
 
     return upcomingCohorts;
 };
@@ -92,7 +96,6 @@ const fetchCohort = async (cohortID) => {
     const headers = {
         Authorization: `Bearer ${cohortTables["KEY"]}`,
     };
-
 
     try {
         const response = await axios.get(url, { headers });
