@@ -24,14 +24,14 @@
     "dev:metrics": "VITE_APP=ux-metrics vite --host",
     "dev:visions": "VITE_APP=ux-metrics vite --host",
     "dev:win": "VITE_APP=ux-metrics vite --host",
-    "build": "vite build",
     "build:research": "VITE_APP=ux-research vite build && cp ./netlify.toml ./ux-research/dist/netlify.toml && cp -R ./ux-research/dist/ ./docs/",
     "build:metrics": "VITE_APP=ux-metrics vite build  && cp ./netlify.toml ./ux-metrics/dist/netlify.toml && cp -R ./ux-metrics/dist/ ./docs/",
     "build:visions": "VITE_APP=ux-visions vite build  && cp ./netlify.toml ./ux-visions/dist/netlify.toml && cp -R ./ux-visions/dist/ ./docs/",
     "build:win": "VITE_APP=win-stakeholders vite build  && cp ./netlify.toml ./win-stakeholders/dist/netlify.toml && cp -R ./win-stakeholders/dist/ ./docs/",
     "build:all": "npm run build:research && npm run build:metrics && npm run build:visions && npm run build:win",
-    "deploy:research": "npm run build:research && netlify deploy --dir ./ux-research/dist/ --site ae39bcfa-e070-4429-8611-db3ae4462696",
-    "deploy:metrics": "npm run build:research && netlify deploy --dir ./ux-metrics/dist/ --site d0113b5c-34df-4283-ac63-de67f2d7f715 ",
+    "deploy:research": "npm run build:research && netlify deploy --dir ./ux-research/dist/ --site ae39bcfa-e070-4429-8611-db3ae4462696 --prod",
+    "deploy:metrics": "npm run build:research && netlify deploy --dir ./ux-metrics/dist/ --site d0113b5c-34df-4283-ac63-de67f2d7f715 --prod",
+    "deploy:all": "npm run deploy:research && npm run deploy:metrics",
     "preview": "vite preview"
   },
   "eslintConfig": {
