@@ -243,7 +243,9 @@ export default function Home() {
 
             <CalendarV2 cohortIndex="1" />
 
-            <HorizontalCohortSelector />
+            <Section>
+                <HorizontalCohortSelector />
+            </Section>
 
             <Section name="jaredSpool" split>
                 <div>
@@ -289,7 +291,7 @@ export default function Home() {
                 </div>
             </Section>
 
-            <Section name="program-pricing pricing">
+            <Section name="program-pricing pricing" split wrap>
                 <div>
                     <h2>Sign up for Advanced Strategic UX Research Course</h2>
                     <p>

@@ -45,7 +45,6 @@ button {
     font-weight: 700;
     padding-inline: 5px;
     width: 100%;
-    white-space: nowrap;
 }
 
 .btn-shadow {
