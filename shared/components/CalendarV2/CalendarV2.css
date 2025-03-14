@@ -3,6 +3,7 @@
     flex-direction: column;
     max-width: 100%;
 }
+
 .scheduleTitle {
     display: flex;
     justify-content: space-between;
@@ -12,8 +13,10 @@
 .courseSchedule-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 1rem;
 }
+
 .courseSchedule-container h1 {
     font-size: 2rem;
     margin-top: 0;
@@ -131,7 +134,7 @@ select {
     font-weight: 700;
 }
 
-.topicDetails > ul {
+.topicDetails>ul {
     line-height: 25px;
     padding-left: 25px;
     margin: 0 0.5rem 0 0;
@@ -139,12 +142,12 @@ select {
     list-style-position: outside;
 }
 
-.topicDetails > ul > li {
+.topicDetails>ul>li {
     margin: 5px 0 0 0;
     line-height: 25px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
     .scheduleTitle {
         display: flex;
         flex-direction: column;
@@ -154,6 +157,7 @@ select {
     .courseSchedule-container {
         min-width: 100%;
     }
+
     .courseSchedule-container h1 {
         margin: 0;
         font-size: 2.5rem;
@@ -238,7 +242,7 @@ select {
         padding: 0 0.75em;
     }
 
-    .topicDetails > ul {
+    .topicDetails>ul {
         padding: 0 0 0 2em;
         font-size: 14px;
         list-style-position: outside;

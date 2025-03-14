@@ -39,7 +39,9 @@ export default function CohortSchedule({ cohortIndex, cohortName }) {
             </section>
 
             <CohortCalendar cohortIndex={cohortIndex} />
-            <HorizontalCohortSelector />
+            <Section>
+                <HorizontalCohortSelector />
+            </Section>
         </div>
     );
 }

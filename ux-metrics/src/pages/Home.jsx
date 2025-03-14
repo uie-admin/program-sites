@@ -168,20 +168,24 @@ export default function Home() {
                     </p>
                 </div>
                 {/* <CourseScheduleTest /> */}
-                <Placeholder>
-                    <VerticalCohortSelector
-                        logoImage="UxMetricsLogo"
-                        altText="Outcome-Drive UX Metrics"
-                    />
-                </Placeholder>
+                <DesktopOnly>
+                    <Placeholder>
+                        <VerticalCohortSelector
+                            logoImage="UxMetricsLogo"
+                            altText="Outcome-Drive UX Metrics"
+                        />
+                    </Placeholder>
+                </DesktopOnly>
+
             </Section>
 
             <Section
                 name="testimonials-container"
                 color="--accent-1-overlay"
                 bg="pixel-texture.jpg"
+
             >
-                <Testimonial icon="star.png" author="T.H., Design Consultant:">
+                <Testimonial icon="star.png" author="- UX Researcher and Designer ">
                     <p>
                         The content of this course has deeply impacted my career
                         (and love for experience design). Your framing of UX
@@ -194,13 +198,10 @@ export default function Home() {
                         You’re hands down the biggest influence on my own
                         career.
                     </p>
-                    <span>
-                        <strong>- UX Researcher and Designer </strong>
-                    </span>
                 </Testimonial>
             </Section>
 
-            <Section name="courseSchedule" split>
+            <Section name="courseSchedule" split wrap>
                 <div className="courseSchedule-pretext">
                     <h2>
                         Outcome-Driven UX Metrics: <br />
@@ -301,7 +302,7 @@ export default function Home() {
                 </div>
             </Section>
 
-            <Section name="program-pricing pricing">
+            <Section name="program-pricing pricing" split wrap>
                 <div>
                     <h2>Sign up for Advanced Strategic UX Research Course</h2>
                     <p>

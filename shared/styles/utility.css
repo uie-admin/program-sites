@@ -25,12 +25,20 @@
     top: 0;
 }
 
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
 @media (max-width: 500px) {
-    .hide-on-mobile {
+    .desktop-only {
         display: none;
     }
 
-    .show-on-mobile {
+    .mobile-only {
         display: block;
     }
 

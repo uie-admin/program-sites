@@ -96,17 +96,12 @@ export default function Cohort({ cohortIndex, cohortName }) {
                         src="./images/UxResearchLogo.png"
                         alt="Advanced Strategic UX Research"
                     />
-                    <button className="btn btn-shadow schedule-button inner-column-purchase button cohortSelector-button-link">
-                        <Link
-                            to={"/Cohort" + cohortIndex + "-schedule"}
-                            className="cohortSelector-button-link"
-                        >
-                            {cohortName} Schedule
-                        </Link>
-                    </button>
+                    <Button className="btn btn-shadow schedule-button inner-column-purchase button cohortSelector-button-link" href={"/Cohort" + cohortIndex + "-schedule"}>
+                        {cohortName} Schedule
+                    </Button>
                 </div>
             </Section>
-            <Section split>
+            <Section name={'teamOrIndividual'} split>
                 <div>
                     <h2>Choose to sign up as an Individual or a Team Member</h2>
                     <p>

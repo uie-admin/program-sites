@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-
-export default function MobileOnly({ children, breakpoint = 768 }) {
+import { useEffect, useState } from "react";
+export default function MobileOnly({ children }) {
+    const breakpoint = 820;
     const [show, setShow] = useState(window.innerWidth <= breakpoint);
 
     useEffect(() => {

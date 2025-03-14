@@ -86,7 +86,9 @@ export default function Teams() {
             </Section>
 
             <MobileOnly>
-                <TeamsTestimonial />
+                <div className="inner-column">
+                    <TeamsTestimonial />
+                </div>
             </MobileOnly>
 
             <Section split>

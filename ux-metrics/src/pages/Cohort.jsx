@@ -6,6 +6,7 @@ import Headline from "../../../shared/components/Content/Headline";
 import SpiffyCheckout from "../../../shared/components/Integrations/SpiffyCheckout";
 import Section from "../../../shared/components/Layout/Section";
 import { CohortContext, UpcomingCohortContext } from "../../../shared/components/CalendarV2/CalendarDataV2";
+import Button from "../../../shared/components/Buttons/Button";
 
 export default function Cohort({ cohortIndex, cohortName }) {
     const [loadingTime, setLoadingTime] = useState(true);
@@ -85,17 +86,12 @@ export default function Cohort({ cohortIndex, cohortName }) {
                         src="./images/UxMetricsLogo.png"
                         alt="Outcome Driven UX Metrics"
                     />
-                    <button className="btn btn-shadow schedule-button inner-column-purchase button cohortSelector-button-link">
-                        <Link
-                            to={"/Cohort" + cohortIndex + "-schedule"}
-                            className="cohortSelector-button-link"
-                        >
-                            {cohortName} Schedule
-                        </Link>
-                    </button>
+                    <Button className="btn btn-shadow schedule-button inner-column-purchase button cohortSelector-button-link" href={"/Cohort" + cohortIndex + "-schedule"}>
+                        {cohortName} Schedule
+                    </Button>
                 </div>
             </Section>
-            <Section split>
+            <Section name={'teamOrIndividual'} split>
                 <div>
                     <h2>Choose to sign up as an Individual or a Team Member</h2>
                     <p>

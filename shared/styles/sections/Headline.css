@@ -21,7 +21,8 @@
 
 /* Mobile full width for articles */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
+
     /* Adjust the width for mobile devices */
     .headline p {
         max-width: 100%;

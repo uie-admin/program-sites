@@ -1,4 +1,4 @@
-export default function Section({ children, name, color, split = "", bg }) {
+export default function Section({ children, name, color, split = "", bg, wrap }) {
     const styleObj = {};
 
     if (bg) {
@@ -16,7 +16,7 @@ export default function Section({ children, name, color, split = "", bg }) {
             style={styleObj}
         >
             <div
-                className={["inner-column", split ? "section-split" : ""]
+                className={["inner-column", split ? "section-split" : "", wrap ? "section-wrap" : ""]
                     .filter(Boolean)
                     .join(" ")}
             >

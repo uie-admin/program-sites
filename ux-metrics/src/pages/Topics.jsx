@@ -30,7 +30,7 @@ export default function Topics() {
                 </DesktopOnly>
             </Headline>
 
-            <Section name="courseTopics-intro">
+            <Section name="courseTopics-intro" split>
                 <MobileOnly>
                     <VerticalCohortSelector
                         logoImage="UxMetricsLogo"
@@ -88,9 +88,9 @@ export default function Topics() {
                     />
                 </Placeholder>
             </Section>
-            <Section>
+            <div className="inner-column">
                 <hr></hr>
-            </Section>
+            </div>
             <TopicList program="METRICS" cohort="F" />
             <Section name="cta-topics">
                 <div className="cta-topics-text">

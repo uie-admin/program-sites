@@ -4,6 +4,7 @@ import HorizontalCohortSelector from "../../../shared/components/CohortSelectors
 import Headline from "../../../shared/components/Content/Headline";
 import { useState, useEffect, useContext } from "react";
 import { CohortContext } from "../../../shared/components/CalendarV2/CalendarDataV2";
+import Section from "../../../shared/components/Layout/Section";
 
 export default function CohortSchedule({ cohortIndex, cohortName }) {
     const cohorts = useContext(CohortContext);
@@ -37,9 +38,10 @@ export default function CohortSchedule({ cohortIndex, cohortName }) {
                     </p>
                 </div>
             </section>
-
             <CohortCalendar cohortIndex={cohortIndex} />
-            <HorizontalCohortSelector />
+            <Section>
+                <HorizontalCohortSelector />
+            </Section>
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
-export default function DesktopOnly({ children, breakpoint = 768 }) {
+export default function DesktopOnly({ children }) {
+    const breakpoint = 820;
     const [show, setShow] = useState(window.innerWidth > breakpoint);
 
     useEffect(() => {

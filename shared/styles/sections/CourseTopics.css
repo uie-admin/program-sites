@@ -33,6 +33,7 @@
 
 .cta-topics {
     padding-bottom: 0;
+
     .inner-column {
         display: flex;
     }
@@ -52,13 +53,15 @@
     }
 }
 
-@media (max-width: 786px) {
+@media (max-width: 820px) {
     .topic-icon {
         max-width: 150px;
     }
+
     .right-content-container {
         flex-direction: column;
     }
+
     .left-content-container {
         flex-direction: column-reverse;
     }

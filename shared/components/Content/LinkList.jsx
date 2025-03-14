@@ -3,7 +3,7 @@ export default function LinkList({ links, name }) {
         <ul className="links-list">
             {links.map((link, index) => (
                 <li key={index} className={name}>
-                    <a to={link.url}>{link.description}</a>
+                    <a href={link.url}>{link.description}</a>
                 </li>
             ))}
         </ul>

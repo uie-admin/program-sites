@@ -46,7 +46,7 @@
     width: 7em;
 }
 
-@media (max-width: 888px) {
+@media (max-width: 820px) {
     .header-links {
         display: none;
         /* Hide links on mobile by default */
@@ -70,8 +70,9 @@
         /* Show links when menu is open */
         padding-block: 1em;
 
-        li {
-            padding: 0.5em 10px;
+        div {
+            padding: 1rem 0.5rem;
+            font-size: 1.2rem;
         }
     }
 
@@ -93,8 +94,8 @@
         color: #016267;
     }
 
-    .header-links li:hover,
-    .header-links li:active {
+    .header-links div:hover,
+    .header-links div:active {
         text-decoration: underline;
         /* Add underline on hover and active */
     }
