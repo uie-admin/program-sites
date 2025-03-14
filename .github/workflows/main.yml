@@ -16,6 +16,5 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_DEPLOY_MESSAGE: "Deployed from GitHub action"
           NETLIFY_DEPLOY_TO_PROD: true
-          build_directory: './ux-research/dist/'
-          install_command: "echo Skipping installing the dependencies"
-          build_command: "echo Skipping building the web files"
+          build_directory: '/ux-research/dist/'
+          build_command: 'npm run build:ux-research'
