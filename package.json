@@ -10,6 +10,7 @@
     "chokidar": "^4.0.1",
     "css-minimizer-webpack-plugin": "^7.0.0",
     "fast-json-stable-stringify": "^2.1.0",
+    "netlify": "^13.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-iframe": "^1.8.5",
@@ -24,10 +25,10 @@
     "dev:visions": "VITE_APP=ux-metrics vite --host",
     "dev:win": "VITE_APP=ux-metrics vite --host",
     "build": "vite build",
-    "build:research": "VITE_APP=ux-research vite build && cp ./netlify.toml ./ux-research/dist/netlify.toml && rm -rf ./docs/ -r \"recursive\" -f \"force\" && mkdir ./docs/ && cp -R ./ux-research/dist/ ./docs/",
-    "build:metrics": "VITE_APP=ux-metrics vite build  && cp ./netlify.toml ./ux-metrics/dist/netlify.toml && rm -rf ./docs/ -r \"recursive\" -f \"force\" && mkdir ./docs/ && cp -R ./ux-metrics/dist/ ./docs/",
-    "build:visions": "VITE_APP=ux-visions vite build  && cp ./netlify.toml ./ux-visions/dist/netlify.toml && rm -rf ./docs/ -r \"recursive\" -f \"force\" && mkdir ./docs/ && cp -R ./ux-visions/dist/ ./docs/",
-    "build:win": "VITE_APP=win-stakeholders vite build  && cp ./netlify.toml ./win-stakeholders/dist/netlify.toml && rm -rf ./docs/ -r \"recursive\" -f \"force\" && mkdir ./docs/ && cp -R ./win-stakeholders/dist/ ./docs/",
+    "build:research": "VITE_APP=ux-research vite build && cp ./netlify.toml ./ux-research/dist/netlify.toml && cp -R ./ux-research/dist/ ./docs/",
+    "build:metrics": "VITE_APP=ux-metrics vite build  && cp ./netlify.toml ./ux-metrics/dist/netlify.toml && cp -R ./ux-metrics/dist/ ./docs/",
+    "build:visions": "VITE_APP=ux-visions vite build  && cp ./netlify.toml ./ux-visions/dist/netlify.toml && cp -R ./ux-visions/dist/ ./docs/",
+    "build:win": "VITE_APP=win-stakeholders vite build  && cp ./netlify.toml ./win-stakeholders/dist/netlify.toml && cp -R ./win-stakeholders/dist/ ./docs/",
     "build:all": "npm run build:research && npm run build:metrics && npm run build:visions && npm run build:win",
     "preview": "vite preview"
   },
@@ -51,6 +52,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
+    "netlify-cli": "^19.0.2",
     "nodemon": "^3.1.7",
     "vite": "^6.1.1"
   }
