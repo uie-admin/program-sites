@@ -23,3 +23,11 @@ Build sites with
 `npm run build:metrics`
 `npm run build:all`
 
+Deploy previews with
+`npm run deploy:research`
+`npm run deploy:metrics`
+
+Remember to do 
+`npm install netlify-cli -g`
+`netlify login`
+to enable cli deployment
