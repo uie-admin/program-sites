@@ -241,7 +241,7 @@ export default function Home() {
                 </Sticky>
             </Section>
 
-            <CalendarV2 cohortIndex="1" />
+            <CalendarV2 />
 
             <Section>
                 <HorizontalCohortSelector />

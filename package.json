@@ -30,7 +30,7 @@
     "build:win": "VITE_APP=win-stakeholders vite build  && cp ./netlify.toml ./win-stakeholders/dist/netlify.toml",
     "build:all": "npm run build:research && npm run build:metrics && npm run build:visions && npm run build:win",
     "deploy:research": "npm run build:research && netlify deploy --dir ./ux-research/dist/ --site ae39bcfa-e070-4429-8611-db3ae4462696 --prod",
-    "deploy:metrics": "npm run build:research && netlify deploy --dir ./ux-metrics/dist/ --site d0113b5c-34df-4283-ac63-de67f2d7f715 --prod",
+    "deploy:metrics": "npm run build:metrics && netlify deploy --dir ./ux-metrics/dist/ --site d0113b5c-34df-4283-ac63-de67f2d7f715 --prod",
     "deploy:all": "npm run deploy:research && npm run deploy:metrics",
     "preview": "vite preview"
   },

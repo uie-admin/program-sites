@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import playButton1 from "./playButton1.png";
 import playButton2 from "./playButton2.png";
 import "./CalendarV2.css";
-import { formatToLocalTime, timezoneDropdown } from "./CalendarDataV2";
+import { formatToLocalTime, timezoneDropdown, UpcomingCohortContext } from "./CalendarDataV2";
 import { CohortContext } from "./CalendarDataV2";
 
 export default function CohortCalendar({ cohortIndex }) {
@@ -25,7 +25,14 @@ export default function CohortCalendar({ cohortIndex }) {
         location.pathname !== "/" ? "calendar-container" : "";
 
     const cohorts = useContext(CohortContext);
+    const upcomingCohorts = useContext(UpcomingCohortContext);
+
+    if (!cohortIndex && upcomingCohorts) {
+        cohortIndex = upcomingCohorts[0][0].cohortNumber;
+    }
     const events = cohorts ? cohorts[cohortIndex - 1] : [];
+
+
 
     return (
         // containerClass here is a CSS class that toggles off on the home page.
@@ -86,8 +93,8 @@ export default function CohortCalendar({ cohortIndex }) {
                                                 <img
                                                     src={playButton1}
                                                     className={`scheduleIconImg ${expandedSections[index]
-                                                            ? "rotated"
-                                                            : ""
+                                                        ? "rotated"
+                                                        : ""
                                                         }`}
                                                     alt="playButton1"
                                                 />
@@ -170,10 +177,10 @@ export default function CohortCalendar({ cohortIndex }) {
                                                 <img
                                                     src={playButton2}
                                                     className={`scheduleIconImg ${expandedSections[
-                                                            index + 0.1
-                                                        ]
-                                                            ? "rotated"
-                                                            : ""
+                                                        index + 0.1
+                                                    ]
+                                                        ? "rotated"
+                                                        : ""
                                                         }`}
                                                     alt="playButton2"
                                                 />
